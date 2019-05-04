@@ -11,7 +11,7 @@
     <WarningsAsErrors />
   </PropertyGroup>
   <PropertyGroup>
-    <CodeAnalysisRuleSet>$(SolutionDir)CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>$(SolutionDir)\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
