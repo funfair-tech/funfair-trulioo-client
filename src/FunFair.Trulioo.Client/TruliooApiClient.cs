@@ -25,20 +25,20 @@ namespace FunFair.Trulioo.Client
         /// </exception>
         public TruliooApiClient(Context context)
         {
-            this.Context = context ?? throw new ArgumentNullException(nameof(context));
+            Context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         /// <inheritdoc />
         public Context Context { get; }
 
         /// <inheritdoc />
-        public IConfiguration Configuration => this._configuration ?? (this._configuration = new Configuration(this));
+        public IConfiguration Configuration => _configuration ?? (_configuration = new Configuration(this));
 
         /// <inheritdoc />
-        public IVerification Verification => this._verification ?? (this._verification = new Verification(this));
+        public IVerification Verification => _verification ?? (_verification = new Verification(this));
 
         /// <inheritdoc />
-        public Connection Connection => this._connection ?? (this._connection = new Connection(this));
+        public Connection Connection => _connection ?? (_connection = new Connection(this));
 
         /// <summary>
         ///     Gets the URI string for this <see cref="TruliooApiClient" /> instance.
@@ -48,7 +48,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         public override string ToString()
         {
-            return this.Context.ToString();
+            return Context.ToString();
         }
     }
 }
