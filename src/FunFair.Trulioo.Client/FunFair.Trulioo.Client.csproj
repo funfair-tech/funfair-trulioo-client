@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+    <LangVersion>latest</LangVersion>
+    <Features>strict</Features>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Optimize>false</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+    <WarningsAsErrors />
+  </PropertyGroup>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(SolutionDir)CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.3" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\BusinessSearch\" />
+    <Folder Include="Model\Errors\" />
+    <Folder Include="Model\PersonalInfoFields\" />
+    <Folder Include="URI\" />
+  </ItemGroup>
+
+</Project>
