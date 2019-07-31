@@ -57,6 +57,7 @@
     <Rule Id="CA1506" Action="Hidden" />
     <Rule Id="CA1600" Action="Warning" />
     <Rule Id="CA1601" Action="Warning" />
+    <Rule Id="CA1602" Action="None" />
     <Rule Id="CA1700" Action="Warning" />
     <Rule Id="CA1707" Action="Hidden" />
     <Rule Id="CA1710" Action="Hidden" />
