@@ -63,6 +63,6 @@
         /// <summary>
         /// Not normalized fields
         /// </summary>
-        public AdditionalFields AdditionalFields { get; set; } = new AdditionalFields();
+        public AdditionalFields AdditionalFields { get; set; }
     }
 }
