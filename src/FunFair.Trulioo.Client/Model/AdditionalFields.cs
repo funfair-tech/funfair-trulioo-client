@@ -12,5 +12,10 @@
         /// Data in this field will supersede information provided in FirstGivenName, MiddleName and FirstSurname
         /// </summary>
         public string FullName { get; set; }
+        
+        /// <summary>
+        ///     Used for location so you do not have to put building number and street name in, it can be merged into 1 field
+        /// </summary>
+        public string Address1 {get; set; }
     }
 }
