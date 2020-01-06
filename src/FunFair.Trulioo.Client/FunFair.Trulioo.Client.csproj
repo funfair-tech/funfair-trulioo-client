@@ -1,5 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
     <LangVersion>latest</LangVersion>
@@ -15,7 +14,6 @@
   <PropertyGroup>
     <CodeAnalysisRuleSet>$(SolutionDir)\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="AsyncFixer" Version="1.1.6" PrivateAssets="All" />
     <PackageReference Include="FunFair.CodeAnalysis" Version="1.0.0.21" PrivateAssets="All" />
@@ -24,7 +22,7 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
     <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
     <PackageReference Include="SonarAnalyzer.CSharp" Version="8.1.0.13383" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.4" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\BusinessSearch\" />
@@ -32,5 +30,4 @@
     <Folder Include="Model\PersonalInfoFields\" />
     <Folder Include="URI\" />
   </ItemGroup>
-
 </Project>
