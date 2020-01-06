@@ -61,8 +61,8 @@
         public string PostalCode { get; set; }
 
         /// <summary>
-        /// Not normalized fields
+        /// Not part of trulioo v1 API spec
         /// </summary>
-        public AdditionalFields AdditionalFields { get; set; }
+        public LocationAdditionalFields AdditionalFields { get; set; } = new LocationAdditionalFields();
     }
 }

@@ -61,8 +61,8 @@ namespace FunFair.Trulioo.Client.Model
         public string Gender { get; set; }
 
         /// <summary>
-        /// 
+        ///  Not part of trulioo v1 API spec
         /// </summary>
-        public AdditionalFields AdditionalFields { get; set; }
+        public PersonInfoAdditionalFields AdditionalFields { get; set; } = new PersonInfoAdditionalFields();
     }
 }
