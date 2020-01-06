@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FunFair.Trulioo.Client.Model
+﻿namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     /// Business class to hold name value pair to be passed for verification

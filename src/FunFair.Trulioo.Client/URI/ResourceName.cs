@@ -61,7 +61,7 @@ namespace FunFair.Trulioo.Client.URI
         ///     <see cref="ResourceName" /> precedes, follows, or appears in the same
         ///     position in the sort order as the other object.
         /// </summary>
-        /// <param name="other">
+        /// <param name="obj">
         ///     The object to compare to the current <see cref="ResourceName" />.
         /// </param>
         /// <returns>
@@ -106,9 +106,9 @@ namespace FunFair.Trulioo.Client.URI
         ///         </item>
         ///     </list>
         /// </returns>
-        public int CompareTo(object other)
+        public int CompareTo(object obj)
         {
-            return this.CompareTo(other as ResourceName);
+            return this.CompareTo(obj as ResourceName);
         }
 
         /// <summary>
@@ -195,7 +195,7 @@ namespace FunFair.Trulioo.Client.URI
         ///     Determines whether the current <see cref="ResourceName" /> and another
         ///     object are equal.
         /// </summary>
-        /// <param name="other">
+        /// <param name="obj">
         ///     The object to compare with the current <see cref="ResourceName" />.
         /// </param>
         /// <returns>
@@ -203,9 +203,9 @@ namespace FunFair.Trulioo.Client.URI
         ///     <see cref="ResourceName" /> and is the same as the current
         ///     <see cref="ResourceName" />; otherwise, <c>false</c>.
         /// </returns>
-        public override bool Equals(object other)
+        public override bool Equals(object obj)
         {
-            return this.Equals(other as ResourceName);
+            return this.Equals(obj as ResourceName);
         }
 
         /// <summary>

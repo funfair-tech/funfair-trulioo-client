@@ -119,9 +119,9 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the POST request.
         /// </returns>
-        internal async Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
+        internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            await SendAsync(HttpMethod.Post, ns, resource, content)
+            return SendAsync(HttpMethod.Post, ns, resource, content)
                 .ConfigureAwait(continueOnCapturedContext: false);
         }
 
@@ -186,9 +186,9 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
-        internal async Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
+        internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            await SendAsync(HttpMethod.Put, ns, resource, content)
+            return SendAsync(HttpMethod.Put, ns, resource, content)
                 .ConfigureAwait(continueOnCapturedContext: false);
         }
 
@@ -207,9 +207,9 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the DELETE request.
         /// </returns>
-        internal async Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
+        internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            await SendAsync(HttpMethod.Delete, ns, resource, content)
+            return SendAsync(HttpMethod.Delete, ns, resource, content)
                 .ConfigureAwait(continueOnCapturedContext: false);
         }
 

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 
 namespace FunFair.Trulioo.Client.Exceptions
 {
@@ -26,7 +25,7 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
         public AuthenticationFailureException(string message, Exception innerException)
-            : base(message, -1, innerException?.Message)
+            : base(message, -1, innerException.Message)
         {
         }
     }
