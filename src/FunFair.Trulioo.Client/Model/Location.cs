@@ -1,4 +1,6 @@
-﻿namespace FunFair.Trulioo.Client.Model
+﻿using FunFair.Trulioo.Client.Model.LocationFields;
+
+namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     /// 
@@ -63,6 +65,6 @@
         /// <summary>
         /// Not part of trulioo v1 API spec
         /// </summary>
-        public LocationAdditionalFields AdditionalFields { get; set; } = new LocationAdditionalFields();
+        public AdditionalFields AdditionalFields { get; set; } = new AdditionalFields();
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace FunFair.Trulioo.Client.Model.PersonalInfoFields
 {
     /// <summary>
-    /// 
+    ///     Additional Fields for person info
     /// </summary>
     public class AdditionalFields
     {
