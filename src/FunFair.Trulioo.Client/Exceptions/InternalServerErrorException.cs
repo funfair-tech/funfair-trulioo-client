@@ -23,7 +23,7 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
         public InternalServerErrorException(string message, Exception innerException) : base(message, -1,
-            innerException.Message)
+            innerException?.Message)
         {
         }
     }
