@@ -6,6 +6,8 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 -->
 
 ## [Unreleased]
+### Changed
+- FF-1910 - updated to net core sdk 3.1.102
 
 
 <!-- 
