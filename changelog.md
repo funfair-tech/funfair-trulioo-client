@@ -10,7 +10,6 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1910 - updated to net core sdk 3.1.102
 - FF-2127 - updates packages for dotnet core 3.1.201
 
-
 <!-- 
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
