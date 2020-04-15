@@ -17,7 +17,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     If set, the transaction will run asyncronously and trulioo will try to update the client with transaction state
         ///     updates until completed.
         /// </summary>
-        [SuppressMessage("CA1056", "CA1056", Justification = "Not our code.")]
+        [SuppressMessage(category: "CA1056", checkId: "CA1056", Justification = "Not our code.")]
         public string CallBackUrl { get; set; }
 
         /// <summary>

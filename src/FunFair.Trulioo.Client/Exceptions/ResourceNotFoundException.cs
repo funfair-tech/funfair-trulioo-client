@@ -13,19 +13,19 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
         public ResourceNotFoundException()
-            : base("", -1, "")
+            : base(message: "", code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
         public ResourceNotFoundException(string message)
-            : base(message, -1, "")
+            : base(message, code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
         public ResourceNotFoundException(string message, Exception innerException)
-            : base(message, -1, innerException.Message)
+            : base(message, code: -1, innerException.Message)
         {
         }
     }

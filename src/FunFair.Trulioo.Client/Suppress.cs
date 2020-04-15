@@ -1,5 +1,3 @@
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage(
-    "Microsoft.Design",
-    "CA1016:MarkAssembliesWithAssemblyVersion")]
+[assembly: SuppressMessage(category: "Microsoft.Design", checkId: "CA1016:MarkAssembliesWithAssemblyVersion")]

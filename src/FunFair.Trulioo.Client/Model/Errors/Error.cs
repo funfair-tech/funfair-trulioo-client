@@ -37,7 +37,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         /// </returns>
         public override string ToString()
         {
-            return $"{Code}:{Message}";
+            return $"{this.Code}:{this.Message}";
         }
     }
 }

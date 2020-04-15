@@ -5,10 +5,10 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using FunFair.Trulioo.Client.Exceptions;
 using FunFair.Trulioo.Client.Model.Errors;
 using FunFair.Trulioo.Client.URI;
+using Newtonsoft.Json;
 using UnauthorizedAccessException = FunFair.Trulioo.Client.Exceptions.UnauthorizedAccessException;
 
 namespace FunFair.Trulioo.Client
@@ -20,7 +20,8 @@ namespace FunFair.Trulioo.Client
     {
         private static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
                                                                                 {
-                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat
+                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc,
+                                                                                    DateFormatHandling = DateFormatHandling.IsoDateFormat
                                                                                 };
 
         private readonly string _credentials;
@@ -80,6 +81,7 @@ namespace FunFair.Trulioo.Client
                 HttpClient httpClient = this._httpClientFactory.CreateClient(this._httpClientName);
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType: "application/json"));
                 httpClient.DefaultRequestHeaders.Add(name: "User-Agent", value: "trulioo-sdk-csharp/1.1");
+
                 return httpClient;
             }
         }
@@ -99,7 +101,7 @@ namespace FunFair.Trulioo.Client
         internal async Task<TReturn> GetAsync<TReturn>(Namespace ns, ResourceName resource)
         {
             TReturn response = await this.SendAsync<TReturn>(HttpMethod.Get, ns, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -243,9 +245,9 @@ namespace FunFair.Trulioo.Client
 
             dynamic message = typeof(TReturn) == typeof(string)
                 ? await response.Content.ReadAsStringAsync()
-                    .ConfigureAwait(false)
+                                .ConfigureAwait(false)
                 : JsonConvert.DeserializeObject<TReturn>(await response.Content.ReadAsStringAsync()
-                                                             .ConfigureAwait(false));
+                                                                       .ConfigureAwait(false));
 
             return message;
         }
@@ -260,7 +262,7 @@ namespace FunFair.Trulioo.Client
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
                 HttpResponseMessage response = await this.HttpClient.SendAsync(request, HttpCompletionOption.ResponseContentRead, CancellationToken.None)
-                    .ConfigureAwait(continueOnCapturedContext: false);
+                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -284,7 +286,7 @@ namespace FunFair.Trulioo.Client
         private static async Task ThrowRequestExceptionAsync(HttpResponseMessage response)
         {
             string content = await response.Content.ReadAsStringAsync()
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                           .ConfigureAwait(continueOnCapturedContext: false);
             Error error = ParseError(response.StatusCode, content);
 
             RequestException requestException;
@@ -326,7 +328,8 @@ namespace FunFair.Trulioo.Client
 
             try
             {
-                error = JsonConvert.DeserializeObject<Error>(content) ?? new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
+                error = JsonConvert.DeserializeObject<Error>(content) ??
+                        new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
             }
             catch (Exception ex)
             {

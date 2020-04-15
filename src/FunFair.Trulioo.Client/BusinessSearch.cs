@@ -21,9 +21,11 @@ namespace FunFair.Trulioo.Client
         protected internal BusinessSearch(TruliooApiClient service)
         {
             if (service == null)
+            {
                 throw new ArgumentNullException(nameof(service));
+            }
 
-            _service = service;
+            this._service = service;
         }
 
         #endregion
@@ -37,9 +39,10 @@ namespace FunFair.Trulioo.Client
         /// <returns> Contains the List of possible businesses from search </returns>
         public async Task<BusinessSearchResponse> BusinessSearchAsync(BusinessSearchRequest request)
         {
-            var resource = new ResourceName("search");
-            var response = await _context.PostAsync<BusinessSearchResponse>(_businessNamespace, resource, request)
-                .ConfigureAwait(false);
+            ResourceName resource = new ResourceName("search");
+            BusinessSearchResponse response = await this._context.PostAsync<BusinessSearchResponse>(this._businessNamespace, resource, request)
+                                                        .ConfigureAwait(continueOnCapturedContext: false);
+
             return response;
         }
 
@@ -50,9 +53,10 @@ namespace FunFair.Trulioo.Client
         /// <returns> Contains the Business Search transaction result </returns>
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
-            var resource = new ResourceName("search", "transactionrecord", id);
-            var response = await _context.GetAsync<BusinessSearchResponse>(_businessNamespace, resource)
-                .ConfigureAwait(false);
+            ResourceName resource = new ResourceName("search", "transactionrecord", id);
+            BusinessSearchResponse response = await this._context.GetAsync<BusinessSearchResponse>(this._businessNamespace, resource)
+                                                        .ConfigureAwait(continueOnCapturedContext: false);
+
             return response;
         }
 
@@ -62,9 +66,9 @@ namespace FunFair.Trulioo.Client
 
         private readonly TruliooApiClient _service;
 
-        private Context _context => _service?.Context;
+        private Context _context => this._service?.Context;
 
-        private readonly Namespace _businessNamespace = new Namespace("business");
+        private readonly Namespace _businessNamespace = new Namespace(value: "business");
 
         #endregion
     }

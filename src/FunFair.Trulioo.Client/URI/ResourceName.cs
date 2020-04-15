@@ -21,7 +21,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </param>
         public ResourceName(ResourceName resourceName, params string[] parts)
             : this(resourceName.Concat(parts)
-                       .ToArray())
+                               .ToArray())
         {
         }
 
@@ -180,8 +180,8 @@ namespace FunFair.Trulioo.Client.URI
                 return diff;
             }
 
-            var pair = this.Items.Zip(other.Items, resultSelector: (p1, p2) => new { ThisPart = p1, OtherPart = p2 })
-                .FirstOrDefault(predicate: p => p.ThisPart != p.OtherPart);
+            var pair = this.Items.Zip(other.Items, resultSelector: (p1, p2) => new {ThisPart = p1, OtherPart = p2})
+                           .FirstOrDefault(predicate: p => p.ThisPart != p.OtherPart);
 
             if (pair == null)
             {
@@ -189,6 +189,38 @@ namespace FunFair.Trulioo.Client.URI
             }
 
             return string.Compare(pair.ThisPart, pair.OtherPart, StringComparison.Ordinal);
+        }
+
+        /// <summary>
+        ///     Determines whether the current <see cref="ResourceName" /> and another one
+        ///     are equal.
+        /// </summary>
+        /// <param name="other">
+        ///     The object to compare with the current <see cref="ResourceName" />.
+        /// </param>
+        /// <returns>
+        ///     <c>true</c> if <paramref name="other" /> is non <c>null</c> and is the
+        ///     same as the current <see cref="ResourceName" />; otherwise,
+        ///     <c>false</c>.
+        /// </returns>
+        public bool Equals(ResourceName other)
+        {
+            if ((object) other == null)
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (this.Items.Count != other.Items.Count)
+            {
+                return false;
+            }
+
+            return this.Items.SequenceEqual(other.Items);
         }
 
         /// <summary>
@@ -206,38 +238,6 @@ namespace FunFair.Trulioo.Client.URI
         public override bool Equals(object obj)
         {
             return this.Equals(obj as ResourceName);
-        }
-
-        /// <summary>
-        ///     Determines whether the current <see cref="ResourceName" /> and another one
-        ///     are equal.
-        /// </summary>
-        /// <param name="other">
-        ///     The object to compare with the current <see cref="ResourceName" />.
-        /// </param>
-        /// <returns>
-        ///     <c>true</c> if <paramref name="other" /> is non <c>null</c> and is the
-        ///     same as the current <see cref="ResourceName" />; otherwise,
-        ///     <c>false</c>.
-        /// </returns>
-        public bool Equals(ResourceName other)
-        {
-            if ((object)other == null)
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            if (this.Items.Count != other.Items.Count)
-            {
-                return false;
-            }
-
-            return this.Items.SequenceEqual(other.Items);
         }
 
         /// <summary>
@@ -265,7 +265,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator >(ResourceName a, ResourceName b)
         {
-            if ((object)a == null)
+            if ((object) a == null)
             {
                 return false;
             }
@@ -287,9 +287,9 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator >=(ResourceName a, ResourceName b)
         {
-            if ((object)a == null)
+            if ((object) a == null)
             {
-                return (object)b == null;
+                return (object) b == null;
             }
 
             return a.CompareTo(b) < 0;
@@ -316,7 +316,7 @@ namespace FunFair.Trulioo.Client.URI
                 return true;
             }
 
-            if ((object)a == null || (object)b == null)
+            if ((object) a == null || (object) b == null)
             {
                 return false;
             }
@@ -357,9 +357,9 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator <(ResourceName a, ResourceName b)
         {
-            if ((object)a == null)
+            if ((object) a == null)
             {
-                return (object)b != null;
+                return (object) b != null;
             }
 
             return a.CompareTo(b) < 0;
@@ -379,7 +379,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator <=(ResourceName a, ResourceName b)
         {
-            if ((object)a == null)
+            if ((object) a == null)
             {
                 return true;
             }

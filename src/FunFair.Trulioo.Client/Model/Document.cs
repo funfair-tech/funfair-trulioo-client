@@ -1,37 +1,37 @@
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
-    /// Name value pairs of document information to be passed for verification
+    ///     Name value pairs of document information to be passed for verification
     /// </summary>
     public class Document
     {
         /// <summary>
-        /// Front of the document
+        ///     Front of the document
         /// </summary>
         public byte[] DocumentFrontImage { get; set; }
 
         /// <summary>
-        /// Back of the document
+        ///     Back of the document
         /// </summary>
         public byte[] DocumentBackImage { get; set; }
 
         /// <summary>
-        /// Selfie image
+        ///     Selfie image
         /// </summary>
         public byte[] LivePhoto { get; set; }
 
         /// <summary>
-        /// Document type 
+        ///     Document type
         /// </summary>
         public string DocumentType { get; set; }
 
         /// <summary>
-        /// Accept Incomplete Document.
+        ///     Accept Incomplete Document.
         /// </summary>
         public bool? AcceptIncompleteDocument { get; set; }
 
         /// <summary>
-        /// Validate Document Image Quality.
+        ///     Validate Document Image Quality.
         /// </summary>
         public bool? ValidateDocumentImageQuality { get; set; }
     }

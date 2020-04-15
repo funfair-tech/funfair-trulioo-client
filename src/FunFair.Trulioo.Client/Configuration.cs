@@ -40,7 +40,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("consents", configurationName, countryCode);
             IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                     .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -53,20 +53,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("countrycodes", configurationName);
             IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
-
-            return response;
-        }
-
-        /// <summary>
-        ///     Gets the provinces states or other subdivisions for a country, mostly matches ISO 3166-2
-        /// </summary>
-        /// <param name="countryCode"></param>
-        public async Task<IEnumerable<CountrySubdivision>> GetCountrySubdivisionsAsync(string countryCode)
-        {
-            ResourceName resource = new ResourceName("countrysubdivisions", countryCode);
-            IList<CountrySubdivision> response = await this.Context.GetAsync<IList<CountrySubdivision>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                     .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -81,7 +68,20 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("fields", configurationName, countryCode);
             Dictionary<string, dynamic> response = await this.Context.GetAsync<Dictionary<string, dynamic>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                             .ConfigureAwait(continueOnCapturedContext: false);
+
+            return response;
+        }
+
+        /// <summary>
+        ///     Gets the provinces states or other subdivisions for a country, mostly matches ISO 3166-2
+        /// </summary>
+        /// <param name="countryCode"></param>
+        public async Task<IEnumerable<CountrySubdivision>> GetCountrySubdivisionsAsync(string countryCode)
+        {
+            ResourceName resource = new ResourceName("countrysubdivisions", countryCode);
+            IList<CountrySubdivision> response = await this.Context.GetAsync<IList<CountrySubdivision>>(this._configurationNamespace, resource)
+                                                           .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -96,7 +96,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("testentities", configurationName, countryCode);
             IList<DataFields> response = await this.Context.GetAsync<IList<DataFields>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                   .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -111,7 +111,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("datasources", configurationName, countryCode);
             IList<NormalizedDatasourceGroupCountry> response = await this.Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -126,7 +126,7 @@ namespace FunFair.Trulioo.Client
             ResourceName resource = countryCode != null ? new ResourceName("documentTypes", countryCode) : new ResourceName("documentTypes");
 
             Dictionary<string, IList<string>> response = await this.Context.GetAsync<Dictionary<string, IList<string>>>(this._configurationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                                   .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
