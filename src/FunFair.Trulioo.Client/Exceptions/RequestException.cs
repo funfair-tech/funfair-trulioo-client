@@ -9,8 +9,8 @@ namespace FunFair.Trulioo.Client.Exceptions
         protected internal RequestException(string message, int code, string reason)
             : base(message)
         {
-            Code = code;
-            Reason = reason;
+            this.Code = code;
+            this.Reason = reason;
         }
 
         /// <inheritdoc />
@@ -47,6 +47,6 @@ namespace FunFair.Trulioo.Client.Exceptions
         private string Reason { get; }
 
         /// <inheritdoc />
-        public override string Message => string.IsNullOrEmpty(base.Message) ? Reason : base.Message;
+        public override string Message => string.IsNullOrEmpty(base.Message) ? this.Reason : base.Message;
     }
 }

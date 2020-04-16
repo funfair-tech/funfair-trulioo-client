@@ -40,7 +40,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("verify");
             VerifyResult response = await this.Context.PostAsync<VerifyResult>(this._verificationNamespace, resource, request)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                              .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -54,7 +54,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("transactionrecord", id);
             TransactionRecordResult response = await this.Context.GetAsync<TransactionRecordResult>(this._verificationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -68,7 +68,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("transactionrecord", id, "verbose");
             TransactionRecordResult response = await this.Context.GetAsync<TransactionRecordResult>(this._verificationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -82,7 +82,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("transactionrecord", id, "withaddress");
             TransactionRecordResult response = await this.Context.GetAsync<TransactionRecordResult>(this._verificationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }
@@ -96,7 +96,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = new ResourceName("transaction", id, "status");
             TransactionStatus response = await this.Context.GetAsync<TransactionStatus>(this._verificationNamespace, resource)
-                .ConfigureAwait(continueOnCapturedContext: false);
+                                                   .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
         }

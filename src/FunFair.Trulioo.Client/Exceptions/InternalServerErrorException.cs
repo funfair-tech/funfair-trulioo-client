@@ -12,18 +12,20 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
-        public InternalServerErrorException() : base("", -1, "")
+        public InternalServerErrorException()
+            : base(message: "", code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
-        public InternalServerErrorException(string message) : base(message, -1, "")
+        public InternalServerErrorException(string message)
+            : base(message, code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
-        public InternalServerErrorException(string message, Exception innerException) : base(message, -1,
-            innerException.Message)
+        public InternalServerErrorException(string message, Exception innerException)
+            : base(message, code: -1, innerException.Message)
         {
         }
     }
