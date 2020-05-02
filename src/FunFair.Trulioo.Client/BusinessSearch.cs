@@ -40,7 +40,7 @@ namespace FunFair.Trulioo.Client
         public async Task<BusinessSearchResponse> BusinessSearchAsync(BusinessSearchRequest request)
         {
             ResourceName resource = new ResourceName("search");
-            BusinessSearchResponse response = await this._context.PostAsync<BusinessSearchResponse>(this._businessNamespace, resource, request)
+            BusinessSearchResponse response = await this._context.PostAsync<BusinessSearchResponse>(ns: this._businessNamespace, resource: resource, content: request)
                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
@@ -54,7 +54,7 @@ namespace FunFair.Trulioo.Client
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
             ResourceName resource = new ResourceName("search", "transactionrecord", id);
-            BusinessSearchResponse response = await this._context.GetAsync<BusinessSearchResponse>(this._businessNamespace, resource)
+            BusinessSearchResponse response = await this._context.GetAsync<BusinessSearchResponse>(ns: this._businessNamespace, resource: resource)
                                                         .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
