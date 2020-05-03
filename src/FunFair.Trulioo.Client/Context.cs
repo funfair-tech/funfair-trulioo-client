@@ -63,7 +63,7 @@ namespace FunFair.Trulioo.Client
             this._httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
             this._httpClientName = httpClientName;
 
-            this._credentials = EncodeCredentials(userName, password);
+            this._credentials = EncodeCredentials(userName: userName, password: password);
         }
 
         /// <summary>
@@ -100,7 +100,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal async Task<TReturn> GetAsync<TReturn>(Namespace ns, ResourceName resource)
         {
-            TReturn response = await this.SendAsync<TReturn>(HttpMethod.Get, ns, resource)
+            TReturn response = await this.SendAsync<TReturn>(httpMethod: HttpMethod.Get, ns: ns, resource: resource)
                                          .ConfigureAwait(continueOnCapturedContext: false);
 
             return response;
@@ -123,7 +123,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(HttpMethod.Post, ns, resource, content)
+            return SendAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content)
                 .ConfigureAwait(continueOnCapturedContext: false);
         }
 
@@ -144,7 +144,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal async Task<TReturn> PostAsync<TReturn>(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            dynamic response = await SendAsync<TReturn>(HttpMethod.Post, ns, resource, content)
+            dynamic response = await SendAsync<TReturn>(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content)
                 .ConfigureAwait(false);
 
             return response;
@@ -167,7 +167,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal async Task<TReturn> PutAsync<TReturn>(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            dynamic response = await SendAsync<TReturn>(HttpMethod.Put, ns, resource, content)
+            dynamic response = await SendAsync<TReturn>(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content)
                 .ConfigureAwait(false);
 
             return response;
@@ -190,7 +190,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(HttpMethod.Put, ns, resource, content)
+            return SendAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content)
                 .ConfigureAwait(continueOnCapturedContext: false);
         }
 
@@ -211,7 +211,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(HttpMethod.Delete, ns, resource, content)
+            return SendAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content)
                 .ConfigureAwait(continueOnCapturedContext: false);
         }
 
@@ -223,24 +223,24 @@ namespace FunFair.Trulioo.Client
             builder.Append(value: "/v1/");
             builder.Append(name.ToUriString());
 
-            Uri uri = new Uri(builder.ToString(), UriKind.Absolute);
+            Uri uri = new Uri(builder.ToString(), uriKind: UriKind.Absolute);
 
             return uri;
         }
 
         private static StringContent GetStringContent(dynamic content)
         {
-            if (object.ReferenceEquals(content, objB: null))
+            if (object.ReferenceEquals(objA: content, objB: null))
             {
                 return null;
             }
 
-            return new StringContent(JsonConvert.SerializeObject(content, JsonSerializerSettings), Encoding.UTF8, mediaType: "application/json");
+            return new StringContent(JsonConvert.SerializeObject(value: content, settings: JsonSerializerSettings), encoding: Encoding.UTF8, mediaType: "application/json");
         }
 
         private async Task<TReturn> SendAsync<TReturn>(HttpMethod httpMethod, Namespace ns, ResourceName resource, dynamic content = null)
         {
-            dynamic response = await SendInternalAsync(httpMethod, ns, resource, content)
+            dynamic response = await SendInternalAsync(httpMethod: httpMethod, ns: ns, resource: resource, content: content)
                 .ConfigureAwait(false);
 
             dynamic message = typeof(TReturn) == typeof(string)
@@ -254,15 +254,18 @@ namespace FunFair.Trulioo.Client
 
         private async Task<HttpResponseMessage> SendInternalAsync(HttpMethod httpMethod, Namespace ns, ResourceName resource, dynamic content = null)
         {
-            Uri serviceUri = this.CreateServiceUri(ns, resource);
+            Uri serviceUri = this.CreateServiceUri(ns: ns, name: resource);
             dynamic stringContent = GetStringContent(content);
 
-            using (HttpRequestMessage request = new HttpRequestMessage(httpMethod, serviceUri) {Content = stringContent})
+            using (HttpRequestMessage request = new HttpRequestMessage(method: httpMethod, requestUri: serviceUri) {Content = stringContent})
             {
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
-                HttpResponseMessage response = await this.HttpClient.SendAsync(request, HttpCompletionOption.ResponseContentRead, CancellationToken.None)
-                                                         .ConfigureAwait(continueOnCapturedContext: false);
+                HttpResponseMessage response = await this
+                                                     .HttpClient.SendAsync(request: request,
+                                                                           completionOption: HttpCompletionOption.ResponseContentRead,
+                                                                           cancellationToken: CancellationToken.None)
+                                                     .ConfigureAwait(continueOnCapturedContext: false);
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -287,34 +290,34 @@ namespace FunFair.Trulioo.Client
         {
             string content = await response.Content.ReadAsStringAsync()
                                            .ConfigureAwait(continueOnCapturedContext: false);
-            Error error = ParseError(response.StatusCode, content);
+            Error error = ParseError(statusCode: response.StatusCode, content: content);
 
             RequestException requestException;
 
             switch (response.StatusCode)
             {
                 case HttpStatusCode.BadRequest:
-                    requestException = new BadRequestException(error.Message, error.Code, error.Reason);
+                    requestException = new BadRequestException(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
                 case HttpStatusCode.Forbidden:
-                    requestException = new UnauthorizedAccessException(error.Message, error.Code, error.Reason);
+                    requestException = new UnauthorizedAccessException(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
                 case HttpStatusCode.InternalServerError:
-                    requestException = new InternalServerErrorException(error.Message, error.Code, error.Reason);
+                    requestException = new InternalServerErrorException(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
                 case HttpStatusCode.NotFound:
-                    requestException = new ResourceNotFoundException(error.Message, error.Code, error.Reason);
+                    requestException = new ResourceNotFoundException(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
                 case HttpStatusCode.Unauthorized:
-                    requestException = new AuthenticationFailureException(error.Message, error.Code, error.Reason);
+                    requestException = new AuthenticationFailureException(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
                 default:
-                    requestException = new RequestException(error.Message, error.Code, error.Reason);
+                    requestException = new RequestException(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
             }

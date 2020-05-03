@@ -168,7 +168,7 @@ namespace FunFair.Trulioo.Client.URI
                 return 1;
             }
 
-            if (ReferenceEquals(this, other))
+            if (ReferenceEquals(this, objB: other))
             {
                 return 0;
             }
@@ -180,7 +180,7 @@ namespace FunFair.Trulioo.Client.URI
                 return diff;
             }
 
-            var pair = this.Items.Zip(other.Items, resultSelector: (p1, p2) => new {ThisPart = p1, OtherPart = p2})
+            var pair = this.Items.Zip(second: other.Items, resultSelector: (p1, p2) => new {ThisPart = p1, OtherPart = p2})
                            .FirstOrDefault(predicate: p => p.ThisPart != p.OtherPart);
 
             if (pair == null)
@@ -188,7 +188,7 @@ namespace FunFair.Trulioo.Client.URI
                 return 0;
             }
 
-            return string.Compare(pair.ThisPart, pair.OtherPart, StringComparison.Ordinal);
+            return string.Compare(strA: pair.ThisPart, strB: pair.OtherPart, comparisonType: StringComparison.Ordinal);
         }
 
         /// <summary>
@@ -210,7 +210,7 @@ namespace FunFair.Trulioo.Client.URI
                 return false;
             }
 
-            if (ReferenceEquals(this, other))
+            if (ReferenceEquals(this, objB: other))
             {
                 return true;
             }
@@ -311,7 +311,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator ==(ResourceName a, ResourceName b)
         {
-            if (ReferenceEquals(a, b))
+            if (ReferenceEquals(objA: a, objB: b))
             {
                 return true;
             }
@@ -398,7 +398,7 @@ namespace FunFair.Trulioo.Client.URI
         {
             IEnumerable<string> segments = from segment in this select segment;
 
-            return string.Join(separator: "/", segments);
+            return string.Join(separator: "/", values: segments);
         }
 
         /// <summary>
@@ -415,7 +415,7 @@ namespace FunFair.Trulioo.Client.URI
         {
             IEnumerable<string> segments = from segment in this select Uri.EscapeDataString(segment);
 
-            return string.Join(separator: "/", segments);
+            return string.Join(separator: "/", values: segments);
         }
     }
 }

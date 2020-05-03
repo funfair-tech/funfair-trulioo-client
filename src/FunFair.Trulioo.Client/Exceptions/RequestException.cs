@@ -26,7 +26,7 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
         public RequestException(string message, Exception innerException)
-            : base(message, innerException)
+            : base(message: message, innerException: innerException)
         {
         }
 
