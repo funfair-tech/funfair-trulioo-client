@@ -9,9 +9,10 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+- FF-1429 - Updated AsyncFixer to 1.1.8
 ### Removed
 
-<!-- 
+<!--
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
 
@@ -26,6 +27,7 @@ Releases that have at least been deployed to staging, BUT NOT necessarily releas
 - FF-1737 - Allow Trulioo KYC to handle additional fields
 
 
-## [1.0.0] 
+## [1.0.0]
 ### Changed
 - FF-950 - Updated to .net core 2.2.401
+
