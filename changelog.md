@@ -9,15 +9,18 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
-- FF-2488 - Udated packages and global.json to net core 3.1.301
-- FF-1429 - Updated SonarAnalyzer.CSharp to 8.8.0.18411
-- FF-1429 - Updated AsyncFixer to 1.3.0
-- FF-1429 - Updated AsyncFixer to 1.1.8
 ### Removed
 
 <!--
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
+
+## [1.3.0] - 2020-06-19
+### Changed
+- FF-2488 - Udated packages and global.json to net core 3.1.301
+- FF-1429 - Updated SonarAnalyzer.CSharp to 8.8.0.18411
+- FF-1429 - Updated AsyncFixer to 1.3.0
+- FF-1429 - Updated AsyncFixer to 1.1.8
 
 ## [1.2.0] - 2020-05-13
 ### Changed
