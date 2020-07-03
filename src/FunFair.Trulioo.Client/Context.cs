@@ -20,7 +20,8 @@ namespace FunFair.Trulioo.Client
     {
         private static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
                                                                                 {
-                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat
+                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc,
+                                                                                    DateFormatHandling = DateFormatHandling.IsoDateFormat
                                                                                 };
 
         private readonly string _credentials;
@@ -256,7 +257,8 @@ namespace FunFair.Trulioo.Client
             {
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
-                HttpResponseMessage response = await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
+                HttpResponseMessage response =
+                    await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -320,7 +322,8 @@ namespace FunFair.Trulioo.Client
 
             try
             {
-                error = JsonConvert.DeserializeObject<Error>(content) ?? new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
+                error = JsonConvert.DeserializeObject<Error>(content) ??
+                        new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
             }
             catch (Exception ex)
             {
