@@ -20,8 +20,7 @@ namespace FunFair.Trulioo.Client
     {
         private static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
                                                                                 {
-                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc,
-                                                                                    DateFormatHandling = DateFormatHandling.IsoDateFormat
+                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat
                                                                                 };
 
         private readonly string _credentials;
@@ -100,8 +99,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal async Task<TReturn> GetAsync<TReturn>(Namespace ns, ResourceName resource)
         {
-            TReturn response = await this.SendAsync<TReturn>(httpMethod: HttpMethod.Get, ns: ns, resource: resource)
-                                         .ConfigureAwait(continueOnCapturedContext: false);
+            TReturn response = await this.SendAsync<TReturn>(httpMethod: HttpMethod.Get, ns: ns, resource: resource);
 
             return response;
         }
@@ -123,8 +121,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content)
-                .ConfigureAwait(continueOnCapturedContext: false);
+            return SendAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content);
         }
 
         /// <summary>
@@ -190,8 +187,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content)
-                .ConfigureAwait(continueOnCapturedContext: false);
+            return SendAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content);
         }
 
         /// <summary>
@@ -211,8 +207,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content)
-                .ConfigureAwait(continueOnCapturedContext: false);
+            return SendAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content);
         }
 
         private Uri CreateServiceUri(Namespace ns, ResourceName name)
@@ -261,16 +256,11 @@ namespace FunFair.Trulioo.Client
             {
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
-                HttpResponseMessage response = await this
-                                                     .HttpClient.SendAsync(request: request,
-                                                                           completionOption: HttpCompletionOption.ResponseContentRead,
-                                                                           cancellationToken: CancellationToken.None)
-                                                     .ConfigureAwait(continueOnCapturedContext: false);
+                HttpResponseMessage response = await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    await ThrowRequestExceptionAsync(response)
-                        .ConfigureAwait(continueOnCapturedContext: false);
+                    await ThrowRequestExceptionAsync(response);
                 }
 
                 return response;
@@ -288,8 +278,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         private static async Task ThrowRequestExceptionAsync(HttpResponseMessage response)
         {
-            string content = await response.Content.ReadAsStringAsync()
-                                           .ConfigureAwait(continueOnCapturedContext: false);
+            string content = await response.Content.ReadAsStringAsync();
             Error error = ParseError(statusCode: response.StatusCode, content: content);
 
             RequestException requestException;
@@ -331,8 +320,7 @@ namespace FunFair.Trulioo.Client
 
             try
             {
-                error = JsonConvert.DeserializeObject<Error>(content) ??
-                        new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
+                error = JsonConvert.DeserializeObject<Error>(content) ?? new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
             }
             catch (Exception ex)
             {

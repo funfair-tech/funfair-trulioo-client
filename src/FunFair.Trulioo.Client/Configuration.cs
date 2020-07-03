@@ -39,8 +39,7 @@ namespace FunFair.Trulioo.Client
         public async Task<IEnumerable<string>> GetСonsentsAsync(string countryCode, string configurationName)
         {
             ResourceName resource = new ResourceName("consents", configurationName, countryCode);
-            IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(ns: this._configurationNamespace, resource: resource)
-                                                     .ConfigureAwait(continueOnCapturedContext: false);
+            IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }
@@ -52,8 +51,7 @@ namespace FunFair.Trulioo.Client
         public async Task<IEnumerable<string>> GetCountryCodesAsync(string configurationName)
         {
             ResourceName resource = new ResourceName("countrycodes", configurationName);
-            IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(ns: this._configurationNamespace, resource: resource)
-                                                     .ConfigureAwait(continueOnCapturedContext: false);
+            IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }
@@ -67,8 +65,7 @@ namespace FunFair.Trulioo.Client
         public async Task<Dictionary<string, dynamic>> GetFieldsAsync(string countryCode, string configurationName)
         {
             ResourceName resource = new ResourceName("fields", configurationName, countryCode);
-            Dictionary<string, dynamic> response = await this.Context.GetAsync<Dictionary<string, dynamic>>(ns: this._configurationNamespace, resource: resource)
-                                                             .ConfigureAwait(continueOnCapturedContext: false);
+            Dictionary<string, dynamic> response = await this.Context.GetAsync<Dictionary<string, dynamic>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }
@@ -80,8 +77,7 @@ namespace FunFair.Trulioo.Client
         public async Task<IEnumerable<CountrySubdivision>> GetCountrySubdivisionsAsync(string countryCode)
         {
             ResourceName resource = new ResourceName("countrysubdivisions", countryCode);
-            IList<CountrySubdivision> response = await this.Context.GetAsync<IList<CountrySubdivision>>(ns: this._configurationNamespace, resource: resource)
-                                                           .ConfigureAwait(continueOnCapturedContext: false);
+            IList<CountrySubdivision> response = await this.Context.GetAsync<IList<CountrySubdivision>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }
@@ -95,8 +91,7 @@ namespace FunFair.Trulioo.Client
         public async Task<IEnumerable<DataFields>> GetTestEntitiesAsync(string countryCode, string configurationName)
         {
             ResourceName resource = new ResourceName("testentities", configurationName, countryCode);
-            IList<DataFields> response = await this.Context.GetAsync<IList<DataFields>>(ns: this._configurationNamespace, resource: resource)
-                                                   .ConfigureAwait(continueOnCapturedContext: false);
+            IList<DataFields> response = await this.Context.GetAsync<IList<DataFields>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }
@@ -110,11 +105,7 @@ namespace FunFair.Trulioo.Client
         public async Task<IEnumerable<NormalizedDatasourceGroupCountry>> GetDatasourcesAsync(string countryCode, string configurationName)
         {
             ResourceName resource = new ResourceName("datasources", configurationName, countryCode);
-            IList<NormalizedDatasourceGroupCountry> response = await this
-                                                                     .Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(
-                                                                         ns: this._configurationNamespace,
-                                                                         resource: resource)
-                                                                     .ConfigureAwait(continueOnCapturedContext: false);
+            IList<NormalizedDatasourceGroupCountry> response = await this.Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }
@@ -128,8 +119,7 @@ namespace FunFair.Trulioo.Client
         {
             ResourceName resource = countryCode != null ? new ResourceName("documentTypes", countryCode) : new ResourceName("documentTypes");
 
-            Dictionary<string, IList<string>> response = await this.Context.GetAsync<Dictionary<string, IList<string>>>(ns: this._configurationNamespace, resource: resource)
-                                                                   .ConfigureAwait(continueOnCapturedContext: false);
+            Dictionary<string, IList<string>> response = await this.Context.GetAsync<Dictionary<string, IList<string>>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }

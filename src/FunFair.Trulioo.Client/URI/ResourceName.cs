@@ -37,7 +37,7 @@ namespace FunFair.Trulioo.Client.URI
             {
                 if (string.IsNullOrEmpty(part))
                 {
-                    throw new ArgumentException(string.Concat(str0: "parts: ", this.ToString()));
+                    throw new ArgumentException(string.Concat(str0: "parts: ", this.ToString()), nameof(parts));
                 }
             }
         }
