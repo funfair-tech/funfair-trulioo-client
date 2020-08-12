@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunFair.Trulioo.Client", "FunFair.Trulioo.Client\FunFair.Trulioo.Client.csproj", "{6A837DA2-68B0-46BB-81EB-66A36EB5009F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{B6DAE488-07C6-438F-BC77-257F39367406}"
+ProjectSection(SolutionItems) = preProject
+	CodeAnalysis.ruleset = CodeAnalysis.ruleset
+	global.json = global.json
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
