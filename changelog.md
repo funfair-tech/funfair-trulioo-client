@@ -9,6 +9,14 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+### Removed
+
+<!--
+Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
+-->
+
+## [1.4.0] - 2020-08-12
+### Changed
 - FF-1429 - Updated FunFair.CodeAnalysis to 1.9.0.394
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.11.0.20529
 - FF-1429 - Updated Microsoft.CodeAnalysis.FxCopAnalyzers to 3.3.0
@@ -20,16 +28,14 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated FunFair.CodeAnalysis to 1.7.0.347
 - FF-1429 - Updated FunFair.CodeAnalysis to 1.6.0.343
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.9.0.19135
+- FF-2759 - Updated to .net core 3.1.401
+
+## [1.3.0] - 2020-06-19
+### Changed
 - FF-2488 - Udated packages and global.json to net core 3.1.301
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.8.0.18411
 - FF-1429 - Updated AsyncFixer to 1.3.0
 - FF-1429 - Updated AsyncFixer to 1.1.8
-- FF-2759 - Updated to .net core 3.1.401
-### Removed
-
-<!--
-Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
--->
 
 ## [1.2.0] - 2020-05-13
 ### Changed
