@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using FunFair.Trulioo.Client.Exceptions;
 using FunFair.Trulioo.Client.Model.Errors;
 using FunFair.Trulioo.Client.URI;
-using Newtonsoft.Json;
 using UnauthorizedAccessException = FunFair.Trulioo.Client.Exceptions.UnauthorizedAccessException;
 
 namespace FunFair.Trulioo.Client
