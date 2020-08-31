@@ -11,11 +11,11 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Changed
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.12.0.21095
 ### Removed
+### Deployment Changes
 
 <!--
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
-
 ## [1.4.0] - 2020-08-12
 ### Changed
 - FF-1429 - Updated FunFair.CodeAnalysis to 1.9.0.394
@@ -52,17 +52,3 @@ Releases that have at least been deployed to staging, BUT NOT necessarily releas
 ## [1.0.0]
 ### Changed
 - FF-950 - Updated to .net core 2.2.401
-
-
-
-
-
-
-
-
-
-
-
-
-
-
