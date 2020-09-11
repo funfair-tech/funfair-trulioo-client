@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FunFair.Trulioo.Client
 {
@@ -46,6 +47,9 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     A string that represents this object.
         /// </returns>
+        [SuppressMessage(category: "ToStringWithoutOverrideAnalyzer",
+                         checkId: "ExplicitToStringWithoutOverrideAnalyzer: Calling ToString() on object of type 'T' but it does not override ToString()",
+                         Justification = "Required in this case")]
         public override string ToString()
         {
             return this.Context.ToString();
