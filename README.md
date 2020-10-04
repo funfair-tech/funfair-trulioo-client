@@ -63,3 +63,9 @@ You can reach via channels listed on [Trulioo website](https://www.trulioo.com/c
 ## License
 
 The Trulioo SDK for C# is licensed under the Apache License 2.0. Details can be found in the LICENSE file.
+
+## Changelog
+
+View [changelog](CHANGELOG.md)
+
+[CHANGELOG]: ./CHANGELOG.md
