@@ -48,7 +48,7 @@ namespace FunFair.Trulioo.Client
         /// <summary>
         ///     Gets Business Search transaction information
         /// </summary>
-        /// <param name="transactionId"> TransactionRecordID of Business Search to retreive </param>
+        /// <param name="id"> TransactionRecordID of Business Search to retreive </param>
         /// <returns> Contains the Business Search transaction result </returns>
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
