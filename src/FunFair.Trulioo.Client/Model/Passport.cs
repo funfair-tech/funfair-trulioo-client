@@ -1,6 +1,7 @@
 ﻿namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Passport details.
     /// </summary>
     public class Passport
     {

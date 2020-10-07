@@ -1,6 +1,7 @@
 ﻿namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Drivers license.
     /// </summary>
     public class DriverLicence
     {

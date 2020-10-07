@@ -3,6 +3,7 @@ using FunFair.Trulioo.Client.Model.PersonalInfoFields;
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Details about a person.
     /// </summary>
     public class PersonInfo
     {

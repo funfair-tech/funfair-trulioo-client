@@ -5,18 +5,21 @@ using FunFair.Trulioo.Client.Model.Errors;
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Verification result.
     /// </summary>
     public class VerifyResult
     {
         /// <summary>
+        /// Constructor.
         /// </summary>
-        /// <param name="transactionId"></param>
+        /// <param name="transactionId">Transaction id.</param>
         public VerifyResult(string transactionId)
         {
             this.TransactionID = transactionId;
         }
 
         /// <summary>
+        /// Transaction Id.
         /// </summary>
 
         // ReSharper disable once InconsistentNaming not our code
@@ -28,6 +31,7 @@ namespace FunFair.Trulioo.Client.Model
         public DateTime UploadedDt { get; set; }
 
         /// <summary>
+        /// Record.
         /// </summary>
         public Record Record { get; set; }
 
@@ -46,10 +50,12 @@ namespace FunFair.Trulioo.Client.Model
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
+        /// Country code
         /// </summary>
         public string CountryCode { get; set; }
 
         /// <summary>
+        /// Product Name.
         /// </summary>
         public string ProductName { get; set; }
     }

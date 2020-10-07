@@ -1,10 +1,12 @@
 ﻿namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// National Id.
     /// </summary>
     public class NationalId
     {
         /// <summary>
+        /// National ID Number.
         /// </summary>
         public string Number { get; set; }
 

@@ -4,20 +4,24 @@ using FunFair.Trulioo.Client.Model.Errors;
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// A Transaction record.
     /// </summary>
     public class Record
     {
         /// <summary>
+        /// Record Id
         /// </summary>
 
         // ReSharper disable once InconsistentNaming Not our code
         public string TransactionRecordID { get; set; }
 
         /// <summary>
+        /// Record status.
         /// </summary>
         public string RecordStatus { get; set; }
 
         /// <summary>
+        /// Results.
         /// </summary>
         public IEnumerable<DatasourceResult> DatasourceResults { get; set; }
 
@@ -36,6 +40,7 @@ namespace FunFair.Trulioo.Client.Model
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
+        /// Rule.
         /// </summary>
         public RecordRule Rule { get; set; }
     }

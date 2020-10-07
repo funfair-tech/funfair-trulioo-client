@@ -3,6 +3,7 @@
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Location/Address.
     /// </summary>
     public class Location
     {

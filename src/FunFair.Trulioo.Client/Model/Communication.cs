@@ -1,6 +1,7 @@
 ﻿namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Communication details.
     /// </summary>
     public class Communication
     {

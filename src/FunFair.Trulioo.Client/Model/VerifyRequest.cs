@@ -1,6 +1,7 @@
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
+    /// Verification request.
     /// </summary>
     public class VerifyRequest
     {
