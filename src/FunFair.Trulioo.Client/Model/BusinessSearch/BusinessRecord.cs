@@ -20,6 +20,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// <summary>
         ///     The TransactionRecordID, this is the ID you will use to fetch the transaction again.
         /// </summary>
+        // ReSharper disable once InconsistentNaming
         public string TransactionRecordID { get; set; }
 
         /// <summary>

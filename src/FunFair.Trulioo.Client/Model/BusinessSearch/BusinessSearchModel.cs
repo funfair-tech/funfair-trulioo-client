@@ -18,6 +18,7 @@
         /// <summary>
         ///     Duns Number
         /// </summary>
+        // ReSharper disable once InconsistentNaming
         public string DUNSNumber { get; set; }
 
         /// <summary>

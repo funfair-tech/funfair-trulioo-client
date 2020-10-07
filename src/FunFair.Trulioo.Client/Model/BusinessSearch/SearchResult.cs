@@ -28,11 +28,13 @@
         /// <summary>
         ///     Duns Number
         /// </summary>
+        // ReSharper disable once InconsistentNaming
         public string DUNSNumber { get; set; }
 
         /// <summary>
         ///     TaxIDNumber of the Business
         /// </summary>
+        // ReSharper disable once InconsistentNaming
         public string BusinessTaxIDNumber { get; set; }
 
         /// <summary>

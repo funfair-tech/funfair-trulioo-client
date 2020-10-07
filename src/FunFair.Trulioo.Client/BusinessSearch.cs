@@ -64,6 +64,7 @@ namespace FunFair.Trulioo.Client
 
         private readonly TruliooApiClient _service;
 
+        // ReSharper disable once InconsistentNaming
         private Context _context => this._service?.Context;
 
         private readonly Namespace _businessNamespace = new Namespace(value: "business");

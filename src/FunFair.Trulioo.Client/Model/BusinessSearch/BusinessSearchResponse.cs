@@ -12,6 +12,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// <summary>
         ///     The id for the transaction it will be a GUID
         /// </summary>
+        // ReSharper disable once InconsistentNaming
         public string TransactionID { get; set; }
 
         /// <summary>
