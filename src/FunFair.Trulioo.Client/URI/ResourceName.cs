@@ -67,7 +67,7 @@ namespace FunFair.Trulioo.Client.URI
         /// <returns>
         ///     A 32-bit signed integer that indicates whether this instance precedes,
         ///     follows, or appears in the same position in the sort order as
-        ///     <paramref name="other" />.
+        ///     <paramref name="obj" />.
         ///     <list type="table">
         ///         <listheader>
         ///             <term>
@@ -82,7 +82,7 @@ namespace FunFair.Trulioo.Client.URI
         ///                 Less than zero
         ///             </term>
         ///             <description>
-        ///                 This instance precedes <paramref name="other" />.
+        ///                 This instance precedes <paramref name="obj" />.
         ///             </description>
         ///         </item>
         ///         <item>
@@ -91,7 +91,7 @@ namespace FunFair.Trulioo.Client.URI
         ///             </term>
         ///             <description>
         ///                 This instance is in the same position in the sort order as
-        ///                 <paramref name="other" />.
+        ///                 <paramref name="obj" />.
         ///             </description>
         ///         </item>
         ///         <item>
@@ -99,9 +99,9 @@ namespace FunFair.Trulioo.Client.URI
         ///                 Greater than zero
         ///             </term>
         ///             <description>
-        ///                 This instance follows <paramref name="other" />,
-        ///                 <paramref name="other" /> is not a <see cref="ResourceName" />, or
-        ///                 <paramref name="other" /> is <c>null</c>.
+        ///                 This instance follows <paramref name="obj" />,
+        ///                 <paramref name="obj" /> is not a <see cref="ResourceName" />, or
+        ///                 <paramref name="obj" /> is <c>null</c>.
         ///             </description>
         ///         </item>
         ///     </list>
@@ -231,7 +231,7 @@ namespace FunFair.Trulioo.Client.URI
         ///     The object to compare with the current <see cref="ResourceName" />.
         /// </param>
         /// <returns>
-        ///     <c>true</c> if <paramref name="other" /> is a non <c>null</c>
+        ///     <c>true</c> if <paramref name="obj" /> is a non <c>null</c>
         ///     <see cref="ResourceName" /> and is the same as the current
         ///     <see cref="ResourceName" />; otherwise, <c>false</c>.
         /// </returns>

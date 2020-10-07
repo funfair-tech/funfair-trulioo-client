@@ -1,6 +1,7 @@
 ﻿namespace FunFair.Trulioo.Client
 {
     /// <summary>
+    ///     Context.
     /// </summary>
     public interface IContextAware
     {
