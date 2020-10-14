@@ -15,6 +15,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated FunFair.CodeAnalysis to 1.12.0.445
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.13.1.21947
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.13.0.21683
+- FF-2930 - Updated to .net core 3.1.403
 ### Removed
 ### Deployment Changes
 

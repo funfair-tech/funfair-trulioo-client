@@ -72,6 +72,7 @@ namespace FunFair.Trulioo.Client
         /// <value>
         ///     A Trulioo host name.
         /// </value>
+        // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
         public string Host { get; set; } = "api.globaldatacompany.com";
 
         private HttpClient HttpClient
