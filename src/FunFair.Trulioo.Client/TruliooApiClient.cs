@@ -10,8 +10,6 @@ namespace FunFair.Trulioo.Client
     {
         private Configuration _configuration;
 
-        private Connection _connection;
-
         private Verification _verification;
 
         /// <summary>
@@ -37,9 +35,6 @@ namespace FunFair.Trulioo.Client
 
         /// <inheritdoc />
         public IVerification Verification => this._verification ?? (this._verification = new Verification(this));
-
-        /// <inheritdoc />
-        public Connection Connection => this._connection ?? (this._connection = new Connection(this));
 
         /// <summary>
         ///     Gets the URI string for this <see cref="TruliooApiClient" /> instance.

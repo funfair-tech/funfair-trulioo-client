@@ -14,10 +14,5 @@ namespace FunFair.Trulioo.Client
         ///     Gets the <see cref="Verification" /> instance for this <see cref="ITruliooApiClient" />.
         /// </summary>
         IVerification Verification { get; }
-
-        /// <summary>
-        ///     Gets the <see cref="Connection" /> instance for this <see cref="ITruliooApiClient" />.
-        /// </summary>
-        Connection Connection { get; }
     }
 }

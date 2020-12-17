@@ -120,7 +120,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content);
+            return SendNoResultAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content);
         }
 
         /// <summary>
@@ -186,7 +186,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content);
+            return SendNoResultAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content);
         }
 
         /// <summary>
@@ -206,7 +206,7 @@ namespace FunFair.Trulioo.Client
         /// </returns>
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content);
+            return SendNoResultAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content);
         }
 
         private Uri CreateServiceUri(Namespace ns, ResourceName name)
@@ -230,6 +230,11 @@ namespace FunFair.Trulioo.Client
             }
 
             return new StringContent(JsonConvert.SerializeObject(value: content, settings: JsonSerializerSettings), encoding: Encoding.UTF8, mediaType: "application/json");
+        }
+
+        private Task SendNoResultAsync(HttpMethod httpMethod, Namespace ns, ResourceName resource, dynamic content = null)
+        {
+            return SendInternalAsync(httpMethod: httpMethod, ns: ns, resource: resource, content: content);
         }
 
         private async Task<TReturn> SendAsync<TReturn>(HttpMethod httpMethod, Namespace ns, ResourceName resource, dynamic content = null)

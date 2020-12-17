@@ -36,6 +36,8 @@ namespace FunFair.Trulioo.Client.Exceptions
         /// <value>
         ///     Code of the current <see cref="RequestException" />.
         /// </value>
+
+        // ReSharper disable once UnusedAutoPropertyAccessor.Local
         private int Code { get; }
 
         /// <summary>
