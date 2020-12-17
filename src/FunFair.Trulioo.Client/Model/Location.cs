@@ -3,7 +3,7 @@
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
-    /// Location/Address.
+    ///     Location/Address.
     /// </summary>
     public class Location
     {
@@ -65,6 +65,6 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         ///     Not part of trulioo v1 API spec
         /// </summary>
-        public AdditionalFields AdditionalFields { get; set; } = new AdditionalFields();
+        public AdditionalFields AdditionalFields { get; set; } = new();
     }
 }

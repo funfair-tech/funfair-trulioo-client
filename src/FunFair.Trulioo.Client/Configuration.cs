@@ -11,7 +11,7 @@ namespace FunFair.Trulioo.Client
     /// </summary>
     public class Configuration : IConfiguration
     {
-        private readonly Namespace _configurationNamespace = new Namespace(value: "configuration");
+        private readonly Namespace _configurationNamespace = new(value: "configuration");
 
         private readonly TruliooApiClient _service;
 
@@ -38,7 +38,7 @@ namespace FunFair.Trulioo.Client
         /// <param name="configurationName"></param>
         public async Task<IEnumerable<string>> GetСonsentsAsync(string countryCode, string configurationName)
         {
-            ResourceName resource = new ResourceName("consents", configurationName, countryCode);
+            ResourceName resource = new("consents", configurationName, countryCode);
             IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
@@ -50,7 +50,7 @@ namespace FunFair.Trulioo.Client
         /// <param name="configurationName"></param>
         public async Task<IEnumerable<string>> GetCountryCodesAsync(string configurationName)
         {
-            ResourceName resource = new ResourceName("countrycodes", configurationName);
+            ResourceName resource = new("countrycodes", configurationName);
             IEnumerable<string> response = await this.Context.GetAsync<IEnumerable<string>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
@@ -64,7 +64,7 @@ namespace FunFair.Trulioo.Client
         /// <returns></returns>
         public async Task<Dictionary<string, dynamic>> GetFieldsAsync(string countryCode, string configurationName)
         {
-            ResourceName resource = new ResourceName("fields", configurationName, countryCode);
+            ResourceName resource = new("fields", configurationName, countryCode);
             Dictionary<string, dynamic> response = await this.Context.GetAsync<Dictionary<string, dynamic>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
@@ -76,7 +76,7 @@ namespace FunFair.Trulioo.Client
         /// <param name="countryCode"></param>
         public async Task<IEnumerable<CountrySubdivision>> GetCountrySubdivisionsAsync(string countryCode)
         {
-            ResourceName resource = new ResourceName("countrysubdivisions", countryCode);
+            ResourceName resource = new("countrysubdivisions", countryCode);
             IList<CountrySubdivision> response = await this.Context.GetAsync<IList<CountrySubdivision>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
@@ -90,7 +90,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>List of Datafields object</returns>
         public async Task<IEnumerable<DataFields>> GetTestEntitiesAsync(string countryCode, string configurationName)
         {
-            ResourceName resource = new ResourceName("testentities", configurationName, countryCode);
+            ResourceName resource = new("testentities", configurationName, countryCode);
             IList<DataFields> response = await this.Context.GetAsync<IList<DataFields>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
@@ -104,9 +104,8 @@ namespace FunFair.Trulioo.Client
         /// <returns> List of Datsource Group Countries </returns>
         public async Task<IEnumerable<NormalizedDatasourceGroupCountry>> GetDatasourcesAsync(string countryCode, string configurationName)
         {
-            ResourceName resource = new ResourceName("datasources", configurationName, countryCode);
-            IList<NormalizedDatasourceGroupCountry> response =
-                await this.Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(ns: this._configurationNamespace, resource: resource);
+            ResourceName resource = new("datasources", configurationName, countryCode);
+            IList<NormalizedDatasourceGroupCountry> response = await this.Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(ns: this._configurationNamespace, resource: resource);
 
             return response;
         }

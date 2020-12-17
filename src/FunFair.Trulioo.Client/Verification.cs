@@ -13,7 +13,7 @@ namespace FunFair.Trulioo.Client
     {
         private readonly TruliooApiClient _service;
 
-        private readonly Namespace _verificationNamespace = new Namespace(value: "verifications");
+        private readonly Namespace _verificationNamespace = new(value: "verifications");
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="Verification" /> class.
@@ -38,7 +38,7 @@ namespace FunFair.Trulioo.Client
         /// <returns></returns>
         public async Task<VerifyResult> VerifyAsync(VerifyRequest request)
         {
-            ResourceName resource = new ResourceName("verify");
+            ResourceName resource = new("verify");
             VerifyResult response = await this.Context.PostAsync<VerifyResult>(ns: this._verificationNamespace, resource: resource, content: request);
 
             return response;
@@ -51,7 +51,7 @@ namespace FunFair.Trulioo.Client
         /// <returns></returns>
         public async Task<TransactionRecordResult> GetTransactionRecordAsync(string id)
         {
-            ResourceName resource = new ResourceName("transactionrecord", id);
+            ResourceName resource = new("transactionrecord", id);
             TransactionRecordResult response = await this.Context.GetAsync<TransactionRecordResult>(ns: this._verificationNamespace, resource: resource);
 
             return response;
@@ -64,7 +64,7 @@ namespace FunFair.Trulioo.Client
         /// <returns> Verbose Transaction Record Result of the TransactionRecordID </returns>
         public async Task<TransactionRecordResult> GetTransactionRecordVerboseAsync(string id)
         {
-            ResourceName resource = new ResourceName("transactionrecord", id, "verbose");
+            ResourceName resource = new("transactionrecord", id, "verbose");
             TransactionRecordResult response = await this.Context.GetAsync<TransactionRecordResult>(ns: this._verificationNamespace, resource: resource);
 
             return response;
@@ -77,7 +77,7 @@ namespace FunFair.Trulioo.Client
         /// <returns></returns>
         public async Task<TransactionRecordResult> GetTransactionRecordAddressAsync(string id)
         {
-            ResourceName resource = new ResourceName("transactionrecord", id, "withaddress");
+            ResourceName resource = new("transactionrecord", id, "withaddress");
             TransactionRecordResult response = await this.Context.GetAsync<TransactionRecordResult>(ns: this._verificationNamespace, resource: resource);
 
             return response;
@@ -90,7 +90,7 @@ namespace FunFair.Trulioo.Client
         /// <returns> Transaction Status of the transactionID </returns>
         public async Task<TransactionStatus> GetTransactionStatusAsync(string id)
         {
-            ResourceName resource = new ResourceName("transaction", id, "status");
+            ResourceName resource = new("transaction", id, "status");
             TransactionStatus response = await this.Context.GetAsync<TransactionStatus>(ns: this._verificationNamespace, resource: resource);
 
             return response;
