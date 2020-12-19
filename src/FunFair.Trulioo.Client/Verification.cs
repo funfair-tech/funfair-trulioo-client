@@ -49,6 +49,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<TransactionRecordResult> GetTransactionRecordAsync(string id)
         {
             ResourceName resource = new("transactionrecord", id);
@@ -62,6 +63,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Transaction Record to be retreived </param>
         /// <returns> Verbose Transaction Record Result of the TransactionRecordID </returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<TransactionRecordResult> GetTransactionRecordVerboseAsync(string id)
         {
             ResourceName resource = new("transactionrecord", id, "verbose");
@@ -75,6 +77,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<TransactionRecordResult> GetTransactionRecordAddressAsync(string id)
         {
             ResourceName resource = new("transactionrecord", id, "withaddress");
@@ -99,6 +102,7 @@ namespace FunFair.Trulioo.Client
 
     public interface IVerification
     {
+        // ReSharper disable once UnusedMember.Global
         Task<VerifyResult> VerifyAsync(VerifyRequest request);
     }
 }

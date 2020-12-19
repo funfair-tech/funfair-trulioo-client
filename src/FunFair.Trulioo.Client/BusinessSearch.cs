@@ -5,6 +5,7 @@ using FunFair.Trulioo.Client.URI;
 
 namespace FunFair.Trulioo.Client
 {
+    // ReSharper disable once UnusedType.Global
     public class BusinessSearch
     {
         #region Constructors
@@ -37,6 +38,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="request"> Request object containing parameters to search for </param>
         /// <returns> Contains the List of possible businesses from search </returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<BusinessSearchResponse> BusinessSearchAsync(BusinessSearchRequest request)
         {
             ResourceName resource = new("search");
@@ -50,6 +52,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Business Search to retreive </param>
         /// <returns> Contains the Business Search transaction result </returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
             ResourceName resource = new("search", "transactionrecord", id);

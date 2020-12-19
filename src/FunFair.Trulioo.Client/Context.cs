@@ -118,6 +118,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the POST request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
             return SendNoResultAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content);
@@ -161,6 +162,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal async Task<TReturn> PutAsync<TReturn>(Namespace ns, ResourceName resource, dynamic content = null)
         {
             dynamic response = await SendAsync<TReturn>(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content)
@@ -184,6 +186,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
             return SendNoResultAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content);
@@ -204,6 +207,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the DELETE request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
             return SendNoResultAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content);

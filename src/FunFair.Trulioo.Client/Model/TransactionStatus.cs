@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Metadata on transaction status
     /// </summary>
+    // ReSharper disable once UnusedType.Global
     public class TransactionStatus
     {
         /// <summary>
