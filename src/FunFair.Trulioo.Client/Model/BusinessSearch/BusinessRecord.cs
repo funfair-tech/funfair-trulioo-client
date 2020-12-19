@@ -21,11 +21,13 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     The TransactionRecordID, this is the ID you will use to fetch the transaction again.
         /// </summary>
         // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnusedMember.Global
         public string TransactionRecordID { get; set; }
 
         /// <summary>
         ///     'match' or 'nomatch' if the verification passed the rules configured on your account this will be 'match'.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string RecordStatus { get; set; }
 
         /// <summary>

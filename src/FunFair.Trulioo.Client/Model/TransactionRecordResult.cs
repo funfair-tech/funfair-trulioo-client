@@ -19,6 +19,7 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         /// Input fields.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public List<DataField> InputFields { get; set; }
     }
 }

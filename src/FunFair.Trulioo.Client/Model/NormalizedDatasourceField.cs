@@ -8,11 +8,13 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         ///     Field Name
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string FieldName { get; set; }
 
         /// <summary>
         ///     Type
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string Type { get; set; }
     }
 }

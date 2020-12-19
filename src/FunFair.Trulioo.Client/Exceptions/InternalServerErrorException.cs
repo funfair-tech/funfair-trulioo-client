@@ -12,18 +12,21 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+        // ReSharper disable once UnusedMember.Global
         public InternalServerErrorException()
             : base(message: "", code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
+        // ReSharper disable once UnusedMember.Global
         public InternalServerErrorException(string message)
             : base(message: message, code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
+        // ReSharper disable once UnusedMember.Global
         public InternalServerErrorException(string message, Exception innerException)
             : base(message: message, code: -1, reason: innerException.Message)
         {

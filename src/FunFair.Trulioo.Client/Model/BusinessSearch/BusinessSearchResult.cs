@@ -19,11 +19,13 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// <summary>
         ///     The list of businesses returned from the search
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public List<SearchResult> Results { get; set; }
 
         /// <summary>
         ///     Name of the datasource that was called
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string DatasourceName { get; set; }
 
         /// <summary>
