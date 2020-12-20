@@ -32,10 +32,10 @@ namespace FunFair.Trulioo.Client
         public Context Context { get; }
 
         /// <inheritdoc />
-        public IConfiguration Configuration => this._configuration ?? (this._configuration = new Configuration(this));
+        public IConfiguration Configuration => this._configuration ??= new Configuration(this);
 
         /// <inheritdoc />
-        public IVerification Verification => this._verification ?? (this._verification = new Verification(this));
+        public IVerification Verification => this._verification ??= new Verification(this);
 
         /// <summary>
         ///     Gets the URI string for this <see cref="TruliooApiClient" /> instance.
