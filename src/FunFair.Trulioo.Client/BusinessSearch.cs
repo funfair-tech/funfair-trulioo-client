@@ -21,12 +21,7 @@ namespace FunFair.Trulioo.Client
         /// </exception>
         protected internal BusinessSearch(TruliooApiClient service)
         {
-            if (service == null)
-            {
-                throw new ArgumentNullException(nameof(service));
-            }
-
-            this._service = service;
+            this._service = service ?? throw new ArgumentNullException(nameof(service));
         }
 
         #endregion
