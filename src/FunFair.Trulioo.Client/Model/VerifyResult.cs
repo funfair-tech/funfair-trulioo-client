@@ -23,6 +23,8 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
         // ReSharper disable once InconsistentNaming
         // ReSharper disable once UnusedMember.Global
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
+        // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
         public string TransactionID { get; set; }
 
         /// <summary>

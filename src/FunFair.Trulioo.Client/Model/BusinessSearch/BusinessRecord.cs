@@ -33,11 +33,15 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// <summary>
         ///     Results for each datasource that was queried
         /// </summary>
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
+        // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
         public List<BusinessSearchResult> DatasourceResults { get; set; }
 
         /// <summary>
         ///     Errors that occurred, refer to Service Errors to see the errors that appear
         /// </summary>
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
+        // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
         public List<ServiceError> Errors { get; set; }
     }
 }

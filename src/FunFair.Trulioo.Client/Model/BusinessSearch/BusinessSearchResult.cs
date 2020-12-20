@@ -31,6 +31,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// <summary>
         ///     List of errors returned from datasource
         /// </summary>
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public List<ServiceError> Errors { get; }
     }
 }
