@@ -9,6 +9,7 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for working with Trulioo Verification.
     /// </summary>
+    // ReSharper disable once ClassCanBeSealed.Global
     public class Verification : IVerification
     {
         private readonly TruliooApiClient _service;

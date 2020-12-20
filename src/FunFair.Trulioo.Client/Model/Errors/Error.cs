@@ -3,6 +3,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
     /// <summary>
     ///     Provides a class that represents a Trulioo service response error message.
     /// </summary>
+    // ReSharper disable once ClassCanBeSealed.Global
     public class Error
     {
         /// <summary>

@@ -3,6 +3,7 @@
     /// <summary>
     ///     Additional Fields for Location
     /// </summary>
+    // ReSharper disable once ClassCanBeSealed.Global
     public class AdditionalFields
     {
         /// <summary>
