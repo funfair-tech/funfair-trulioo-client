@@ -5,6 +5,7 @@ using FunFair.Trulioo.Client.URI;
 
 namespace FunFair.Trulioo.Client
 {
+    // ReSharper disable once UnusedType.Global
     public class BusinessSearch
     {
         #region Constructors
@@ -20,12 +21,7 @@ namespace FunFair.Trulioo.Client
         /// </exception>
         protected internal BusinessSearch(TruliooApiClient service)
         {
-            if (service == null)
-            {
-                throw new ArgumentNullException(nameof(service));
-            }
-
-            this._service = service;
+            this._service = service ?? throw new ArgumentNullException(nameof(service));
         }
 
         #endregion
@@ -37,9 +33,10 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="request"> Request object containing parameters to search for </param>
         /// <returns> Contains the List of possible businesses from search </returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<BusinessSearchResponse> BusinessSearchAsync(BusinessSearchRequest request)
         {
-            ResourceName resource = new ResourceName("search");
+            ResourceName resource = new("search");
             BusinessSearchResponse response = await this._context.PostAsync<BusinessSearchResponse>(ns: this._businessNamespace, resource: resource, content: request);
 
             return response;
@@ -50,9 +47,10 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Business Search to retreive </param>
         /// <returns> Contains the Business Search transaction result </returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
-            ResourceName resource = new ResourceName("search", "transactionrecord", id);
+            ResourceName resource = new("search", "transactionrecord", id);
             BusinessSearchResponse response = await this._context.GetAsync<BusinessSearchResponse>(ns: this._businessNamespace, resource: resource);
 
             return response;
@@ -67,7 +65,7 @@ namespace FunFair.Trulioo.Client
         // ReSharper disable once InconsistentNaming
         private Context _context => this._service?.Context;
 
-        private readonly Namespace _businessNamespace = new Namespace(value: "business");
+        private readonly Namespace _businessNamespace = new(value: "business");
 
         #endregion
     }

@@ -16,11 +16,6 @@ namespace FunFair.Trulioo.Client.URI
             this.Value = value;
         }
 
-        private Namespace()
-        {
-            this.Value = "";
-        }
-
         /// <summary>
         ///     Gets the user of the current <see cref="Namespace" />.
         /// </summary>

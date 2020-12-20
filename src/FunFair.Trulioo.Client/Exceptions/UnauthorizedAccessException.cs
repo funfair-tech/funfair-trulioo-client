@@ -12,18 +12,21 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+        // ReSharper disable once UnusedMember.Global
         public UnauthorizedAccessException()
             : base(message: "", code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
+        // ReSharper disable once UnusedMember.Global
         public UnauthorizedAccessException(string message)
             : base(message: message, code: -1, reason: "")
         {
         }
 
         /// <inheritdoc />
+        // ReSharper disable once UnusedMember.Global
         public UnauthorizedAccessException(string message, Exception innerException)
             : base(message: message, code: -1, reason: innerException.Message)
         {

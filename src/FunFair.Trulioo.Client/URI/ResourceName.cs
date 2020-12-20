@@ -19,6 +19,7 @@ namespace FunFair.Trulioo.Client.URI
         /// <param name="parts">
         ///     Names to be appended <paramref name="resourceName" />.
         /// </param>
+        // ReSharper disable once UnusedMember.Global
         public ResourceName(ResourceName resourceName, params string[] parts)
             : this(resourceName.Concat(parts)
                                .ToArray())
@@ -50,6 +51,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </exception>
         /// <param name="parts">
         /// </param>
+        // ReSharper disable once UnusedMember.Global
         public ResourceName(IEnumerable<string> parts)
             : this(parts.ToArray())
         {

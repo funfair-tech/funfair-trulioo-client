@@ -16,13 +16,10 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for sending HTTP requests and receiving HTTP responses from a Trulioo server.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Context
     {
-        private static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
-                                                                                {
-                                                                                    DateTimeZoneHandling = DateTimeZoneHandling.Utc,
-                                                                                    DateFormatHandling = DateFormatHandling.IsoDateFormat
-                                                                                };
+        private static readonly JsonSerializerSettings JsonSerializerSettings = new() {DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat};
 
         private readonly string _credentials;
         private readonly IHttpClientFactory _httpClientFactory;
@@ -72,6 +69,7 @@ namespace FunFair.Trulioo.Client
         /// <value>
         ///     A Trulioo host name.
         /// </value>
+
         // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
         public string Host { get; set; } = "api.globaldatacompany.com";
 
@@ -121,9 +119,10 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the POST request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content);
+            return SendNoResultAsync(httpMethod: HttpMethod.Post, ns: ns, resource: resource, content: content);
         }
 
         /// <summary>
@@ -164,6 +163,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal async Task<TReturn> PutAsync<TReturn>(Namespace ns, ResourceName resource, dynamic content = null)
         {
             dynamic response = await SendAsync<TReturn>(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content)
@@ -187,9 +187,10 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content);
+            return SendNoResultAsync(httpMethod: HttpMethod.Put, ns: ns, resource: resource, content: content);
         }
 
         /// <summary>
@@ -207,20 +208,21 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the DELETE request.
         /// </returns>
+        // ReSharper disable once UnusedMember.Global
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
-            return SendAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content);
+            return SendNoResultAsync(httpMethod: HttpMethod.Delete, ns: ns, resource: resource, content: content);
         }
 
         private Uri CreateServiceUri(Namespace ns, ResourceName name)
         {
-            StringBuilder builder = new StringBuilder(value: "https://");
+            StringBuilder builder = new(value: "https://");
             builder.Append(this.Host);
             builder.Append(ns.ToUriString());
             builder.Append(value: "/v1/");
             builder.Append(name.ToUriString());
 
-            Uri uri = new Uri(builder.ToString(), uriKind: UriKind.Absolute);
+            Uri uri = new(builder.ToString(), uriKind: UriKind.Absolute);
 
             return uri;
         }
@@ -233,6 +235,11 @@ namespace FunFair.Trulioo.Client
             }
 
             return new StringContent(JsonConvert.SerializeObject(value: content, settings: JsonSerializerSettings), encoding: Encoding.UTF8, mediaType: "application/json");
+        }
+
+        private Task SendNoResultAsync(HttpMethod httpMethod, Namespace ns, ResourceName resource, dynamic content = null)
+        {
+            return SendInternalAsync(httpMethod: httpMethod, ns: ns, resource: resource, content: content);
         }
 
         private async Task<TReturn> SendAsync<TReturn>(HttpMethod httpMethod, Namespace ns, ResourceName resource, dynamic content = null)
@@ -254,12 +261,11 @@ namespace FunFair.Trulioo.Client
             Uri serviceUri = this.CreateServiceUri(ns: ns, name: resource);
             dynamic stringContent = GetStringContent(content);
 
-            using (HttpRequestMessage request = new HttpRequestMessage(method: httpMethod, requestUri: serviceUri) {Content = stringContent})
+            using (HttpRequestMessage request = new(method: httpMethod, requestUri: serviceUri) {Content = stringContent})
             {
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
-                HttpResponseMessage response =
-                    await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
+                HttpResponseMessage response = await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -323,8 +329,7 @@ namespace FunFair.Trulioo.Client
 
             try
             {
-                error = JsonConvert.DeserializeObject<Error>(content) ??
-                        new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
+                error = JsonConvert.DeserializeObject<Error>(content) ?? new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
             }
             catch (Exception ex)
             {

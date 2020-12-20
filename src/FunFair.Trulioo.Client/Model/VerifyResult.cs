@@ -21,18 +21,22 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         /// Transaction Id.
         /// </summary>
-
-        // ReSharper disable once InconsistentNaming not our code
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnusedMember.Global
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
+        // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
         public string TransactionID { get; set; }
 
         /// <summary>
         ///     Time in UTC
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public DateTime UploadedDt { get; set; }
 
         /// <summary>
         /// Record.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public Record Record { get; set; }
 
         /// <summary>
@@ -47,16 +51,19 @@ namespace FunFair.Trulioo.Client.Model
         ///         <li>2000 : Unrecognized Error</li>
         ///     </ul>
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         /// Country code
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string CountryCode { get; set; }
 
         /// <summary>
         /// Product Name.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string ProductName { get; set; }
     }
 }

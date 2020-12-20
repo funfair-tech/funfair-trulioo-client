@@ -3,6 +3,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
     /// <summary>
     ///     Provides a class that represents a Trulioo service response error message.
     /// </summary>
+    // ReSharper disable once ClassCanBeSealed.Global
     public class Error
     {
         /// <summary>
@@ -11,6 +12,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         /// <value>
         ///     Code of the current <see cref="Error" />.
         /// </value>
+        // ReSharper disable once PropertyCanBeMadeInitOnly.Global
         public int Code { get; set; }
 
         /// <summary>
@@ -19,6 +21,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         /// <value>
         ///     Reason of the current <see cref="Error" />.
         /// </value>
+        // ReSharper disable once PropertyCanBeMadeInitOnly.Global
         public string Reason { get; set; }
 
         /// <summary>
@@ -27,6 +30,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         /// <value>
         ///     Message of the current <see cref="Error" />.
         /// </value>
+        // ReSharper disable once PropertyCanBeMadeInitOnly.Global
         public string Message { get; set; }
 
         /// <summary>

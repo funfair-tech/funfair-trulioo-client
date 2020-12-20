@@ -6,23 +6,26 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     /// A Transaction record.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Record
     {
         /// <summary>
         /// Record Id
         /// </summary>
-
-        // ReSharper disable once InconsistentNaming Not our code
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnusedMember.Global
         public string TransactionRecordID { get; set; }
 
         /// <summary>
         /// Record status.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public string RecordStatus { get; set; }
 
         /// <summary>
         /// Results.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public IEnumerable<DatasourceResult> DatasourceResults { get; set; }
 
         /// <summary>
@@ -37,11 +40,13 @@ namespace FunFair.Trulioo.Client.Model
         ///         <li>2000 : Unrecognized Error</li>
         ///     </ul>
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         /// Rule.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public RecordRule Rule { get; set; }
     }
 }
