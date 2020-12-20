@@ -10,6 +10,7 @@ namespace FunFair.Trulioo.Client
     ///     Provides a class for working with Trulioo Configuration.
     /// </summary>
     // ReSharper disable once ClassCanBeSealed.Global
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Configuration : IConfiguration
     {
         private readonly Namespace _configurationNamespace = new(value: "configuration");
