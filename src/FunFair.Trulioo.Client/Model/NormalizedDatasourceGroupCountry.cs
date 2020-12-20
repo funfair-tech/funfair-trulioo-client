@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Datasource model for information returned on a specific datasource
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class NormalizedDatasourceGroupCountry
     {
         /// <summary>

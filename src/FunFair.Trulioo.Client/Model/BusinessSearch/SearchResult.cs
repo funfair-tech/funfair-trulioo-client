@@ -3,6 +3,7 @@
     /// <summary>
     ///     Name-value pairs returned from Business Search returned from one datasource
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class SearchResult
     {
         /// <summary>

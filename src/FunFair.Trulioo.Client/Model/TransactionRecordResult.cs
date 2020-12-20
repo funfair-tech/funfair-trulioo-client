@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     /// Transaction record result.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class TransactionRecordResult : VerifyResult
     {
         /// <summary>

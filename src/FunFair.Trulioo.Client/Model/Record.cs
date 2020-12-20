@@ -6,6 +6,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     /// A Transaction record.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Record
     {
         /// <summary>

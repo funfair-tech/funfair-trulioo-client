@@ -16,6 +16,7 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for sending HTTP requests and receiving HTTP responses from a Trulioo server.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Context
     {
         private static readonly JsonSerializerSettings JsonSerializerSettings = new() {DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat};

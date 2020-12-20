@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Details about a person.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class PersonInfo
     {
         /// <summary>

@@ -3,6 +3,7 @@
     /// <summary>
     ///     Search Model containing name-value pairs to be used for Business Search
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class BusinessSearchModel
     {
         /// <summary>

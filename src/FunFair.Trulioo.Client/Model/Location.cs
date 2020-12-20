@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Location/Address.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Location
     {
         /// <summary>

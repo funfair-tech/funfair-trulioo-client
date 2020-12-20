@@ -3,6 +3,7 @@
     /// <summary>
     /// Communication details.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Communication
     {
         /// <summary>

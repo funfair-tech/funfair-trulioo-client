@@ -3,6 +3,7 @@
     /// <summary>
     ///     A Data field.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class DataField
     {
         /// <summary>

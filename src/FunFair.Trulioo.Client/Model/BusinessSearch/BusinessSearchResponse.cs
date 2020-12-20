@@ -7,6 +7,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     /// <summary>
     ///     Response object returned from Business Search containing metadata and results from search
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class BusinessSearchResponse
     {
         /// <summary>

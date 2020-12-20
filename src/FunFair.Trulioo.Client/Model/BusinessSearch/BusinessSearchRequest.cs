@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     /// <summary>
     ///     The request to be passed to Client for a business search
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class BusinessSearchRequest
     {
         /// <summary>

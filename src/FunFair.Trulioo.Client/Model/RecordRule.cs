@@ -3,6 +3,7 @@
     /// <summary>
     /// Record  rule.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class RecordRule
     {
         /// <summary>

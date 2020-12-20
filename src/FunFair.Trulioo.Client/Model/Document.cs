@@ -3,6 +3,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Name value pairs of document information to be passed for verification
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Document
     {
         /// <summary>

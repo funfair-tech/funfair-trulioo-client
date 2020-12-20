@@ -3,6 +3,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     An appended field
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class AppendedField
     {
         /// <summary>

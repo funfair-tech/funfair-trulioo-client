@@ -3,6 +3,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     /// Verification request.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class VerifyRequest
     {
         /// <summary>

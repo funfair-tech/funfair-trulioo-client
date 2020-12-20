@@ -3,6 +3,7 @@
     /// <summary>
     /// A Service error.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class ServiceError
     {
         /// <summary>

@@ -3,6 +3,7 @@
     /// <summary>
     ///     Name value pairs of address found from business search
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class SearchResultAddress
     {
         /// <summary>

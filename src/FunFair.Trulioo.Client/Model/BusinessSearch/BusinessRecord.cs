@@ -6,6 +6,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     /// <summary>
     ///     Business Record containing information on Business Search Results
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class BusinessRecord
     {
         /// <summary>

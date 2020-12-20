@@ -3,6 +3,7 @@
     /// <summary>
     /// National Id.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class NationalId
     {
         /// <summary>

@@ -3,6 +3,7 @@
     /// <summary>
     /// Drivers license.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class DriverLicence
     {
         /// <summary>

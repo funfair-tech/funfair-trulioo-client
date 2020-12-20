@@ -3,6 +3,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Field info for a datasource
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class NormalizedDatasourceField
     {
         /// <summary>

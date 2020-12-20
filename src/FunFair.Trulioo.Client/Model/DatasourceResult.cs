@@ -6,6 +6,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     A result from a particular datasource
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class DatasourceResult
     {
         /// <summary>

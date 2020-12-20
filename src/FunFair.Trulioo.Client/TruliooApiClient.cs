@@ -6,6 +6,7 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides access to the Trulioo API V1 offered.
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class TruliooApiClient : ITruliooApiClient, IContextAware
     {
         private Configuration _configuration;

@@ -3,6 +3,7 @@
     /// <summary>
     ///     ISO 3166-2 break down of the country
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class CountrySubdivision
     {
         /// <summary>
