@@ -92,6 +92,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id">TransactionID of the Transaction Status to be retreived </param>
         /// <returns> Transaction Status of the transactionID </returns>
+        // ReSharper disable once UnusedMember.Global
         public async Task<TransactionStatus> GetTransactionStatusAsync(string id)
         {
             ResourceName resource = new("transaction", id, "status");
