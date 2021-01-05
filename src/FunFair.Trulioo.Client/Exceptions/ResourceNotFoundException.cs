@@ -12,6 +12,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         // ReSharper disable once UnusedMember.Global
         public ResourceNotFoundException()
             : base(message: "", code: -1, reason: "")
@@ -19,6 +20,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         // ReSharper disable once UnusedMember.Global
         public ResourceNotFoundException(string message)
             : base(message: message, code: -1, reason: "")
@@ -26,6 +28,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         // ReSharper disable once UnusedMember.Global
         public ResourceNotFoundException(string message, Exception innerException)
             : base(message: message, code: -1, reason: innerException.Message)

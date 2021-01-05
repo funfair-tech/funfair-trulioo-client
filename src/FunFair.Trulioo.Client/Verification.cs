@@ -9,6 +9,7 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for working with Trulioo Verification.
     /// </summary>
+
     // ReSharper disable once ClassCanBeSealed.Global
     public class Verification : IVerification
     {
@@ -50,6 +51,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+
         // ReSharper disable once UnusedMember.Global
         public async Task<TransactionRecordResult> GetTransactionRecordAsync(string id)
         {
@@ -64,6 +66,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Transaction Record to be retreived </param>
         /// <returns> Verbose Transaction Record Result of the TransactionRecordID </returns>
+
         // ReSharper disable once UnusedMember.Global
         public async Task<TransactionRecordResult> GetTransactionRecordVerboseAsync(string id)
         {
@@ -78,6 +81,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+
         // ReSharper disable once UnusedMember.Global
         public async Task<TransactionRecordResult> GetTransactionRecordAddressAsync(string id)
         {
@@ -92,6 +96,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id">TransactionID of the Transaction Status to be retreived </param>
         /// <returns> Transaction Status of the transactionID </returns>
+
         // ReSharper disable once UnusedMember.Global
         public async Task<TransactionStatus> GetTransactionStatusAsync(string id)
         {

@@ -1,14 +1,16 @@
 ﻿namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
-    /// National Id.
+    ///     National Id.
     /// </summary>
+
     // ReSharper disable once ClassNeverInstantiated.Global
     public class NationalId
     {
         /// <summary>
-        /// National ID Number.
+        ///     National ID Number.
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string Number { get; set; }
 
@@ -41,30 +43,35 @@
         ///         <li>US - Social Security Number</li>
         ///     </ul>
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string Type { get; set; }
 
         /// <summary>
         ///     District that issued the ID
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string DistrictOfIssue { get; set; }
 
         /// <summary>
         ///     City that issued the ID
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string CityOfIssue { get; set; }
 
         /// <summary>
         ///     Province that issued the ID
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string ProvinceOfIssue { get; set; }
 
         /// <summary>
         ///     County that issued the ID
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string CountyOfIssue { get; set; }
     }

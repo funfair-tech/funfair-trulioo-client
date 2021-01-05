@@ -14,12 +14,14 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         // ReSharper disable once UnusedMember.Global
         public RequestException()
         {
         }
 
         /// <inheritdoc />
+
         // ReSharper disable once UnusedMember.Global
         public RequestException(string message)
             : base(message)
@@ -27,6 +29,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         // ReSharper disable once UnusedMember.Global
         public RequestException(string message, Exception innerException)
             : base(message: message, innerException: innerException)

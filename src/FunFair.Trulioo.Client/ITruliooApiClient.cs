@@ -8,12 +8,14 @@ namespace FunFair.Trulioo.Client
         /// <summary>
         ///     Gets the <see cref="Configuration" /> instance for this <see cref="ITruliooApiClient" />.
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         IConfiguration Configuration { get; }
 
         /// <summary>
         ///     Gets the <see cref="Verification" /> instance for this <see cref="ITruliooApiClient" />.
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         IVerification Verification { get; }
     }

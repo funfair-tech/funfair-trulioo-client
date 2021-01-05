@@ -16,10 +16,12 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for sending HTTP requests and receiving HTTP responses from a Trulioo server.
     /// </summary>
+
     // ReSharper disable once ClassNeverInstantiated.Global
     public class Context
     {
-        private static readonly JsonSerializerSettings JsonSerializerSettings = new() {DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat};
+        private static readonly JsonSerializerSettings JsonSerializerSettings =
+            new() {DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat};
 
         private readonly string _credentials;
         private readonly IHttpClientFactory _httpClientFactory;
@@ -119,6 +121,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the POST request.
         /// </returns>
+
         // ReSharper disable once UnusedMember.Global
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -163,6 +166,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
+
         // ReSharper disable once UnusedMember.Global
         internal async Task<TReturn> PutAsync<TReturn>(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -187,6 +191,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
+
         // ReSharper disable once UnusedMember.Global
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -208,6 +213,7 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the DELETE request.
         /// </returns>
+
         // ReSharper disable once UnusedMember.Global
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -265,7 +271,8 @@ namespace FunFair.Trulioo.Client
             {
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
-                HttpResponseMessage response = await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
+                HttpResponseMessage response =
+                    await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -329,7 +336,8 @@ namespace FunFair.Trulioo.Client
 
             try
             {
-                error = JsonConvert.DeserializeObject<Error>(content) ?? new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
+                error = JsonConvert.DeserializeObject<Error>(content) ??
+                        new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
             }
             catch (Exception ex)
             {

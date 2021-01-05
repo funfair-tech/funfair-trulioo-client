@@ -3,13 +3,14 @@
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
-    /// Transaction record result.
+    ///     Transaction record result.
     /// </summary>
+
     // ReSharper disable once ClassNeverInstantiated.Global
     public class TransactionRecordResult : VerifyResult
     {
         /// <summary>
-        /// Constructor.
+        ///     Constructor.
         /// </summary>
         /// <param name="transactionId">Transaction Id</param>
         public TransactionRecordResult(string transactionId)
@@ -18,8 +19,9 @@ namespace FunFair.Trulioo.Client.Model
         }
 
         /// <summary>
-        /// Input fields.
+        ///     Input fields.
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public List<DataField> InputFields { get; set; }
     }
