@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     /// <summary>
     ///     The request to be passed to Client for a business search
     /// </summary>
+
     // ReSharper disable once ClassNeverInstantiated.Global
     public class BusinessSearchRequest
     {
@@ -12,6 +13,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     Indicate that Trulioo terms and conditions are accepted
         ///     The Verification request will be executed only if the value of this header is passed as 'true'.
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public bool AcceptTruliooTermsAndConditions { get; set; }
 
@@ -20,6 +22,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     updates until completed.
         /// </summary>
         [SuppressMessage(category: "CA1056", checkId: "CA1056", Justification = "Third party code")]
+
         // ReSharper disable once UnusedMember.Global
         public string CallBackUrl { get; set; }
 
@@ -27,6 +30,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     The consent for the data sources which will be interrogated as a part of the request.
         ///     Included only for the data sources which explicitly require consent
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string[] ConsentForDataSources { get; set; }
 
@@ -35,6 +39,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     Two-letter alpha code for the country for which the verification needs to be performed.
         ///     Call configuration/v1/countrycodes/{configurationname} to get the countries that are valid for you.
         /// </summary>
+
         // ReSharper disable once UnusedMember.Global
         public string CountryCode { get; set; }
 
