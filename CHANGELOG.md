@@ -9,14 +9,17 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
-- FF-1429 - Updated SonarAnalyzer.CSharp to 8.16.0.25740
-- Updated to dotnet 5.0.102
 ### Removed
 ### Deployment Changes
 
 <!--
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
+## [5.1.0] - 2021-01-18
+### Changed
+- FF-1429 - Updated SonarAnalyzer.CSharp to 8.16.0.25740
+- Updated to dotnet 5.0.102
+
 ## [5.0.0] - 2020-12-19
 ### Changed
 - FF-1429 - Updated Microsoft.Extensions to 5.0.0
