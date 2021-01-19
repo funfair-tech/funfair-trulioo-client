@@ -10,6 +10,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Fixed
 ### Changed
 - FF-1429 - Updated AsyncFixer to 1.4.0
+- FF-1429 - Updated AsyncFixer to 1.4.1
 ### Removed
 ### Deployment Changes
 
