@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using FunFair.Trulioo.Client.Model;
 using FunFair.Trulioo.Client.URI;
@@ -9,8 +10,7 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for working with Trulioo Verification.
     /// </summary>
-
-    // ReSharper disable once ClassCanBeSealed.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class Verification : IVerification
     {
         private readonly TruliooApiClient _service;
@@ -51,8 +51,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionRecordResult> GetTransactionRecordAsync(string id)
         {
             ResourceName resource = new("transactionrecord", id);
@@ -66,8 +65,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Transaction Record to be retreived </param>
         /// <returns> Verbose Transaction Record Result of the TransactionRecordID </returns>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionRecordResult> GetTransactionRecordVerboseAsync(string id)
         {
             ResourceName resource = new("transactionrecord", id, "verbose");
@@ -81,8 +79,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionRecordResult> GetTransactionRecordAddressAsync(string id)
         {
             ResourceName resource = new("transactionrecord", id, "withaddress");
@@ -96,8 +93,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id">TransactionID of the Transaction Status to be retreived </param>
         /// <returns> Transaction Status of the transactionID </returns>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionStatus> GetTransactionStatusAsync(string id)
         {
             ResourceName resource = new("transaction", id, "status");
@@ -109,7 +105,7 @@ namespace FunFair.Trulioo.Client
 
     public interface IVerification
     {
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         Task<VerifyResult> VerifyAsync(VerifyRequest request);
     }
 }

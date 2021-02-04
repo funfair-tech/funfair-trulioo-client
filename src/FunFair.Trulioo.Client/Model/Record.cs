@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using FunFair.Trulioo.Client.Model.Errors;
 
 namespace FunFair.Trulioo.Client.Model
@@ -6,30 +7,29 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     A Transaction record.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class Record
     {
         /// <summary>
         ///     Record Id
         /// </summary>
 
-        // ReSharper disable once InconsistentNaming
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string TransactionRecordID { get; set; }
 
         /// <summary>
         ///     Record status.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string RecordStatus { get; set; }
 
         /// <summary>
         ///     Results.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<DatasourceResult> DatasourceResults { get; set; }
 
         /// <summary>
@@ -45,14 +45,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     </ul>
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         ///     Rule.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RecordRule Rule { get; set; }
     }
 }

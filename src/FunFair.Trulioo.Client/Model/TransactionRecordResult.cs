@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     ///     Transaction record result.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class TransactionRecordResult : VerifyResult
     {
         /// <summary>
@@ -22,7 +22,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     Input fields.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<DataField> InputFields { get; set; }
     }
 }

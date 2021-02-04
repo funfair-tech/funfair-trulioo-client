@@ -1,10 +1,11 @@
-﻿namespace FunFair.Trulioo.Client.Model.LocationFields
+using System.Diagnostics.CodeAnalysis;
+
+namespace FunFair.Trulioo.Client.Model.LocationFields
 {
     /// <summary>
     ///     Additional Fields for Location
     /// </summary>
-
-    // ReSharper disable once ClassCanBeSealed.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class AdditionalFields
     {
         /// <summary>
@@ -15,7 +16,7 @@
         ///     verify this address.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Address1 { get; set; }
     }
 }

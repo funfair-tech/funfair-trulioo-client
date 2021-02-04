@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using FunFair.Trulioo.Client.Model.BusinessSearch;
 using FunFair.Trulioo.Client.URI;
@@ -33,8 +34,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="request"> Request object containing parameters to search for </param>
         /// <returns> Contains the List of possible businesses from search </returns>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<BusinessSearchResponse> BusinessSearchAsync(BusinessSearchRequest request)
         {
             ResourceName resource = new("search");
@@ -48,8 +48,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Business Search to retreive </param>
         /// <returns> Contains the Business Search transaction result </returns>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
             ResourceName resource = new("search", "transactionrecord", id);
@@ -64,7 +63,7 @@ namespace FunFair.Trulioo.Client
 
         private readonly TruliooApiClient _service;
 
-        // ReSharper disable once InconsistentNaming
+        [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
         private Context _context => this._service?.Context;
 
         private readonly Namespace _businessNamespace = new(value: "business");

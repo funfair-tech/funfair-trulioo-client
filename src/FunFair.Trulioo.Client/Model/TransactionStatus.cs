@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FunFair.Trulioo.Client.Model
 {
@@ -13,14 +14,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Transaction ID of the transaction
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string TransactionId { get; set; }
 
         /// <summary>
         ///     Transaction Record ID of the transaction available once the transaction has finished processing
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string TransactionRecordId { get; set; }
 
         /// <summary>
@@ -28,21 +29,21 @@ namespace FunFair.Trulioo.Client.Model
         ///     to Completed, Failed, Canceled or TimeoutCanceled to get the verification results.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Status { get; set; }
 
         /// <summary>
         ///     Uploaded date for transaction
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public DateTime UploadedDt { get; set; }
 
         /// <summary>
         ///     Set to true when transaction has timed out
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public bool IsTimedOut { get; set; }
     }
 }

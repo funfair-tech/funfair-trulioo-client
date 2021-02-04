@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FunFair.Trulioo.Client.Exceptions
 {
@@ -14,23 +15,20 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException()
         {
         }
 
         /// <inheritdoc />
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException(string message)
             : base(message)
         {
         }
 
         /// <inheritdoc />
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException(string message, Exception innerException)
             : base(message: message, innerException: innerException)
         {
@@ -43,7 +41,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         ///     Code of the current <see cref="RequestException" />.
         /// </value>
 
-        // ReSharper disable once UnusedAutoPropertyAccessor.Local
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Local", Justification = "TODO: Review")]
         private int Code { get; }
 
         /// <summary>

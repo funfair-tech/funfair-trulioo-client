@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using FunFair.Trulioo.Client.Model.PersonalInfoFields;
 
 namespace FunFair.Trulioo.Client.Model
@@ -5,8 +6,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Details about a person.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class PersonInfo
     {
         /// <summary>
@@ -14,7 +14,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     Dual purpose First Name or Initial
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FirstGivenName { get; set; }
 
         /// <summary>
@@ -22,21 +22,21 @@ namespace FunFair.Trulioo.Client.Model
         ///     Dual purpose Middle Name or Initial
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string MiddleName { get; set; }
 
         /// <summary>
         ///     First (paternal) family name of the individual to be verified
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FirstSurName { get; set; }
 
         /// <summary>
         ///     second family name of the individual to be verified
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string SecondSurname { get; set; }
 
         /// <summary>
@@ -44,29 +44,29 @@ namespace FunFair.Trulioo.Client.Model
         ///     Used for data sources that require the person’s name in ISO Latin-1 format (i.e. as Passport MRZ)
         /// </summary>
 
-        // ReSharper disable once InconsistentNaming
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ISOLatin1Name { get; set; }
 
         /// <summary>
         ///     Day of birth date (i.e. 23 for a date of birth of 23/11/1975)
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? DayOfBirth { get; set; }
 
         /// <summary>
         ///     Month of birth date (i.e. 11 for a date of birth of 23/11/1975)
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? MonthOfBirth { get; set; }
 
         /// <summary>
         ///     Year of birth date (i.e. 1975 for a date of birth of 23/11/1975)
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? YearOfBirth { get; set; }
 
         /// <summary>
@@ -74,21 +74,21 @@ namespace FunFair.Trulioo.Client.Model
         ///     GlobalGateway calculates age of individual and compares it to this number
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? MinimumAge { get; set; }
 
         /// <summary>
         ///     Single character M / F (M = Male, F = Female)
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Gender { get; set; }
 
         /// <summary>
         ///     Not part of trulioo v1 API spec
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public AdditionalFields AdditionalFields { get; set; } = new();
     }
 }
