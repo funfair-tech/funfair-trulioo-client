@@ -1,24 +1,25 @@
-﻿namespace FunFair.Trulioo.Client.Model.Errors
+using System.Diagnostics.CodeAnalysis;
+
+namespace FunFair.Trulioo.Client.Model.Errors
 {
     /// <summary>
     ///     A Service error.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class ServiceError
     {
         /// <summary>
         ///     Error code.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Code { get; set; }
 
         /// <summary>
         ///     Error message.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Message { get; set; }
     }
 }

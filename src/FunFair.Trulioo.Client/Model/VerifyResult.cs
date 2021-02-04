@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using FunFair.Trulioo.Client.Model.Errors;
 
 namespace FunFair.Trulioo.Client.Model
@@ -22,24 +23,24 @@ namespace FunFair.Trulioo.Client.Model
         ///     Transaction Id.
         /// </summary>
 
-        // ReSharper disable once InconsistentNaming
-        // ReSharper disable once UnusedMember.Global
-        // ReSharper disable once UnusedAutoPropertyAccessor.Global
-        // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Global
+        [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Global", Justification = "TODO: Review")]
+        [SuppressMessage(category: "ReSharper", checkId: "AutoPropertyCanBeMadeGetOnly.Global", Justification = "TODO: Review")]
         public string TransactionID { get; set; }
 
         /// <summary>
         ///     Time in UTC
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public DateTime UploadedDt { get; set; }
 
         /// <summary>
         ///     Record.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public Record Record { get; set; }
 
         /// <summary>
@@ -55,21 +56,21 @@ namespace FunFair.Trulioo.Client.Model
         ///     </ul>
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         ///     Country code
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountryCode { get; set; }
 
         /// <summary>
         ///     Product Name.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ProductName { get; set; }
     }
 }

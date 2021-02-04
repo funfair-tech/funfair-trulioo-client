@@ -1,31 +1,32 @@
-﻿namespace FunFair.Trulioo.Client.Model
+using System.Diagnostics.CodeAnalysis;
+
+namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     ///     Communication details.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class Communication
     {
         /// <summary>
         ///     Mobile phone number
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string MobileNumber { get; set; }
 
         /// <summary>
         ///     Telephone number of the individual to be verified
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Telephone { get; set; }
 
         /// <summary>
         ///     Email address of the individual to be verified
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string EmailAddress { get; set; }
     }
 }

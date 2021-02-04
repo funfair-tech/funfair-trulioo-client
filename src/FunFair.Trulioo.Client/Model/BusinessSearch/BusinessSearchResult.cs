@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using FunFair.Trulioo.Client.Model.Errors;
 
 namespace FunFair.Trulioo.Client.Model.BusinessSearch
@@ -6,8 +7,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     /// <summary>
     ///     Result Object for Business Search containing search results from one datasource
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class BusinessSearchResult
     {
         /// <summary>
@@ -22,21 +22,21 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     The list of businesses returned from the search
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<SearchResult> Results { get; set; }
 
         /// <summary>
         ///     Name of the datasource that was called
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string DatasourceName { get; set; }
 
         /// <summary>
         ///     List of errors returned from datasource
         /// </summary>
 
-        // ReSharper disable once UnusedAutoPropertyAccessor.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Global", Justification = "TODO: Review")]
         public List<ServiceError> Errors { get; }
     }
 }

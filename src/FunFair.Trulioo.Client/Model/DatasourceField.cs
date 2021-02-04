@@ -1,31 +1,32 @@
-﻿namespace FunFair.Trulioo.Client.Model
+using System.Diagnostics.CodeAnalysis;
+
+namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     ///     A data source field.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class DatasourceField
     {
         /// <summary>
         ///     The field name.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FieldName { get; set; }
 
         /// <summary>
         ///     The status.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Status { get; set; }
 
         /// <summary>
         ///     THe field group.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FieldGroup { get; set; }
     }
 }

@@ -1,24 +1,25 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     ///     An appended field
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class AppendedField
     {
         /// <summary>
         ///     The field name.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FieldName { get; set; }
 
         /// <summary>
         ///     The data.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Data { get; set; }
     }
 }

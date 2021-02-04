@@ -1,10 +1,11 @@
-﻿namespace FunFair.Trulioo.Client.Model.PersonalInfoFields
+using System.Diagnostics.CodeAnalysis;
+
+namespace FunFair.Trulioo.Client.Model.PersonalInfoFields
 {
     /// <summary>
     ///     Additional Fields for person info
     /// </summary>
-
-    // ReSharper disable once ClassCanBeSealed.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class AdditionalFields
     {
         /// <summary>
@@ -14,7 +15,7 @@
         ///     Data in this field will supersede information provided in FirstGivenName, MiddleName and FirstSurname
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FullName { get; set; }
     }
 }

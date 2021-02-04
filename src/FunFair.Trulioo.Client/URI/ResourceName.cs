@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace FunFair.Trulioo.Client.URI
@@ -19,8 +20,7 @@ namespace FunFair.Trulioo.Client.URI
         /// <param name="parts">
         ///     Names to be appended <paramref name="resourceName" />.
         /// </param>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public ResourceName(ResourceName resourceName, params string[] parts)
             : this(resourceName.Concat(parts)
                                .ToArray())
@@ -52,8 +52,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </exception>
         /// <param name="parts">
         /// </param>
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public ResourceName(IEnumerable<string> parts)
             : this(parts.ToArray())
         {

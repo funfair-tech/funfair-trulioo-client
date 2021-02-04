@@ -1,12 +1,11 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FunFair.Trulioo.Client.Model.BusinessSearch
 {
     /// <summary>
     ///     The request to be passed to Client for a business search
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class BusinessSearchRequest
     {
         /// <summary>
@@ -14,7 +13,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     The Verification request will be executed only if the value of this header is passed as 'true'.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public bool AcceptTruliooTermsAndConditions { get; set; }
 
         /// <summary>
@@ -22,8 +21,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     updates until completed.
         /// </summary>
         [SuppressMessage(category: "CA1056", checkId: "CA1056", Justification = "Third party code")]
-
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CallBackUrl { get; set; }
 
         /// <summary>
@@ -31,7 +29,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     Included only for the data sources which explicitly require consent
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string[] ConsentForDataSources { get; set; }
 
         /// <summary>
@@ -40,10 +38,10 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         ///     Call configuration/v1/countrycodes/{configurationname} to get the countries that are valid for you.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountryCode { get; set; }
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public BusinessSearchModel Business { get; set; }
     }
 }

@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace FunFair.Trulioo.Client
 {
     /// <summary>
@@ -9,14 +11,14 @@ namespace FunFair.Trulioo.Client
         ///     Gets the <see cref="Configuration" /> instance for this <see cref="ITruliooApiClient" />.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         IConfiguration Configuration { get; }
 
         /// <summary>
         ///     Gets the <see cref="Verification" /> instance for this <see cref="ITruliooApiClient" />.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         IVerification Verification { get; }
     }
 }

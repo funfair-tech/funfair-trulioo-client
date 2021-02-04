@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using FunFair.Trulioo.Client.Model.Errors;
 
 namespace FunFair.Trulioo.Client.Model
@@ -6,50 +7,49 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     A result from a particular datasource
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class DatasourceResult
     {
         /// <summary>
         ///     The data source status.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string DatasourceStatus { get; set; }
 
         /// <summary>
         ///     The data source name.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string DatasourceName { get; set; }
 
         /// <summary>
         ///     The data source fields.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<DatasourceField> DatasourceFields { get; set; }
 
         /// <summary>
         ///     The appended fields.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<AppendedField> AppendedFields { get; set; }
 
         /// <summary>
         ///     The Errors.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         ///     The field groups.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<string> FieldGroups { get; set; }
     }
 }

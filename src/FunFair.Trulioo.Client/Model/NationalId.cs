@@ -1,17 +1,18 @@
-﻿namespace FunFair.Trulioo.Client.Model
+using System.Diagnostics.CodeAnalysis;
+
+namespace FunFair.Trulioo.Client.Model
 {
     /// <summary>
     ///     National Id.
     /// </summary>
-
-    // ReSharper disable once ClassNeverInstantiated.Global
+    [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class NationalId
     {
         /// <summary>
         ///     National ID Number.
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Number { get; set; }
 
         /// <summary>
@@ -44,35 +45,35 @@
         ///     </ul>
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Type { get; set; }
 
         /// <summary>
         ///     District that issued the ID
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string DistrictOfIssue { get; set; }
 
         /// <summary>
         ///     City that issued the ID
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CityOfIssue { get; set; }
 
         /// <summary>
         ///     Province that issued the ID
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ProvinceOfIssue { get; set; }
 
         /// <summary>
         ///     County that issued the ID
         /// </summary>
 
-        // ReSharper disable once UnusedMember.Global
+        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountyOfIssue { get; set; }
     }
 }
