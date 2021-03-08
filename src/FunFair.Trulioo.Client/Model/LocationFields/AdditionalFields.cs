@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model.LocationFields
     /// <summary>
     ///     Additional Fields for Location
     /// </summary>
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class AdditionalFields
     {
@@ -15,6 +16,7 @@ namespace FunFair.Trulioo.Client.Model.LocationFields
         ///     Please note: each datasource requires the address fields to be configured in a certain manner, implementing and sending Address1 instead of individual address fields may affect your ability to
         ///     verify this address.
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Address1 { get; set; }

@@ -7,12 +7,14 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     A Transaction record.
     /// </summary>
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class Record
     {
         /// <summary>
         ///     Record Id
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -22,12 +24,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Record status.
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string RecordStatus { get; set; }
 
         /// <summary>
         ///     Results.
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<DatasourceResult> DatasourceResults { get; set; }
@@ -45,12 +49,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     </ul>
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         ///     Rule.
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RecordRule Rule { get; set; }

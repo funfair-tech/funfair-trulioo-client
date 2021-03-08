@@ -23,6 +23,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     Transaction Id.
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Global", Justification = "TODO: Review")]
@@ -33,12 +34,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Time in UTC
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public DateTime UploadedDt { get; set; }
 
         /// <summary>
         ///     Record.
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public Record Record { get; set; }
@@ -56,6 +59,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     </ul>
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<ServiceError> Errors { get; set; }
 
@@ -63,12 +67,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Country code
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountryCode { get; set; }
 
         /// <summary>
         ///     Product Name.
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ProductName { get; set; }

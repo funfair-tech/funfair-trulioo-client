@@ -5,12 +5,14 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     National Id.
     /// </summary>
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class NationalId
     {
         /// <summary>
         ///     National ID Number.
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Number { get; set; }
@@ -45,12 +47,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     </ul>
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Type { get; set; }
 
         /// <summary>
         ///     District that issued the ID
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string DistrictOfIssue { get; set; }
@@ -59,6 +63,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     City that issued the ID
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CityOfIssue { get; set; }
 
@@ -66,12 +71,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Province that issued the ID
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ProvinceOfIssue { get; set; }
 
         /// <summary>
         ///     County that issued the ID
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountyOfIssue { get; set; }

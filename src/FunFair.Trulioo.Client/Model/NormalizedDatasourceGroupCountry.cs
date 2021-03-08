@@ -6,12 +6,14 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Datasource model for information returned on a specific datasource
     /// </summary>
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class NormalizedDatasourceGroupCountry
     {
         /// <summary>
         ///     Name
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Name { get; set; }
@@ -20,12 +22,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Description
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Description { get; set; }
 
         /// <summary>
         ///     Required Fields
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<NormalizedDatasourceField> RequiredFields { get; set; }
@@ -34,12 +38,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Optional Fields
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<NormalizedDatasourceField> OptionalFields { get; set; }
 
         /// <summary>
         ///     Appended Fields
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<NormalizedDatasourceField> AppendedFields { get; set; }
@@ -48,12 +54,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Output Fields
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<NormalizedDatasourceField> OutputFields { get; set; }
 
         /// <summary>
         ///     Source Type
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string SourceType { get; set; }
@@ -62,12 +70,14 @@ namespace FunFair.Trulioo.Client.Model
         ///     Update Frequency
         /// </summary>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string UpdateFrequency { get; set; }
 
         /// <summary>
         ///     Coverage
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Coverage { get; set; }

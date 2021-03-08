@@ -5,6 +5,7 @@ namespace FunFair.Trulioo.Client.Model.PersonalInfoFields
     /// <summary>
     ///     Additional Fields for person info
     /// </summary>
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class AdditionalFields
     {
@@ -14,6 +15,7 @@ namespace FunFair.Trulioo.Client.Model.PersonalInfoFields
         ///     Use the GET configuration/v1/fields/{configurationname}/{countrycode} to determine if this field is available for the country in question.
         ///     Data in this field will supersede information provided in FirstGivenName, MiddleName and FirstSurname
         /// </summary>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FullName { get; set; }

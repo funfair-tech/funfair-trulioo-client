@@ -15,12 +15,14 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException()
         {
         }
 
         /// <inheritdoc />
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException(string message)
             : base(message)
@@ -28,6 +30,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException(string message, Exception innerException)
             : base(message: message, innerException: innerException)
@@ -40,6 +43,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         /// <value>
         ///     Code of the current <see cref="RequestException" />.
         /// </value>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Local", Justification = "TODO: Review")]
         private int Code { get; }
