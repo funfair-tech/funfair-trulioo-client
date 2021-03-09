@@ -21,6 +21,7 @@ namespace FunFair.Trulioo.Client.URI
         ///     Names to be appended <paramref name="resourceName" />.
         /// </param>
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public ResourceName(ResourceName resourceName, params string[] parts)
             : this(resourceName.Concat(parts)
@@ -53,6 +54,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </exception>
         /// <param name="parts">
         /// </param>
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public ResourceName(IEnumerable<string> parts)
@@ -424,3 +426,4 @@ namespace FunFair.Trulioo.Client.URI
         }
     }
 }
+

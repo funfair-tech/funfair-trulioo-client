@@ -6,12 +6,14 @@ namespace FunFair.Trulioo.Client.Model
     ///     The data field name-value pairs for the data elements on which the verification is to be performed
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class DataFields
     {
         /// <summary>
         ///     Personal Information
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -22,6 +24,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public Location Location { get; set; }
 
@@ -30,12 +33,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public Communication Communication { get; set; }
 
         /// <summary>
         ///     Driver Licence Information
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -47,12 +52,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public NationalId[] NationalIds { get; set; }
 
         /// <summary>
         ///     Passport information
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -63,6 +70,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public CountrySpecific CountrySpecific { get; set; }
 
@@ -71,7 +79,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public Document Document { get; set; }
     }
 }
+

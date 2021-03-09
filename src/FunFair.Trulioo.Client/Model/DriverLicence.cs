@@ -6,12 +6,14 @@ namespace FunFair.Trulioo.Client.Model
     ///     Drivers license.
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class DriverLicence
     {
         /// <summary>
         ///     Driver's Licence Number of the individual to be verified
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -22,12 +24,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string State { get; set; }
 
         /// <summary>
         ///     Driver's Licence day of expiry of the individual to be verified
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -38,6 +42,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? MonthOfExpiry { get; set; }
 
@@ -46,7 +51,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? YearOfExpiry { get; set; }
     }
 }
+

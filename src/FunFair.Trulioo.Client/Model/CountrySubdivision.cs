@@ -6,12 +6,14 @@ namespace FunFair.Trulioo.Client.Model
     ///     ISO 3166-2 break down of the country
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class CountrySubdivision
     {
         /// <summary>
         ///     Name of the area, in English or one of the languages of the country
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -22,6 +24,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Code { get; set; }
 
@@ -30,7 +33,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ParentCode { get; set; }
     }
 }
+

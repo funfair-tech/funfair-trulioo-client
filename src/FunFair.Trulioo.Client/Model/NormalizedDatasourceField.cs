@@ -6,12 +6,14 @@ namespace FunFair.Trulioo.Client.Model
     ///     Field info for a datasource
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class NormalizedDatasourceField
     {
         /// <summary>
         ///     Field Name
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -22,7 +24,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Type { get; set; }
     }
 }
+

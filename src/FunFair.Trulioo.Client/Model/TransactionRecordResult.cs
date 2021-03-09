@@ -7,6 +7,7 @@ namespace FunFair.Trulioo.Client.Model
     ///     Transaction record result.
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class TransactionRecordResult : VerifyResult
     {
@@ -24,7 +25,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public List<DataField> InputFields { get; set; }
     }
 }
+
