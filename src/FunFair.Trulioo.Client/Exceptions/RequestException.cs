@@ -16,12 +16,14 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException()
         {
         }
 
         /// <inheritdoc />
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException(string message)
@@ -30,6 +32,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public RequestException(string message, Exception innerException)
@@ -43,6 +46,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         /// <value>
         ///     Code of the current <see cref="RequestException" />.
         /// </value>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Local", Justification = "TODO: Review")]
@@ -60,3 +64,4 @@ namespace FunFair.Trulioo.Client.Exceptions
         public override string Message => string.IsNullOrEmpty(base.Message) ? this.Reason : base.Message;
     }
 }
+

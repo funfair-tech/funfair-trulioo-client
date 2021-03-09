@@ -6,6 +6,7 @@ namespace FunFair.Trulioo.Client.Model.LocationFields
     ///     Additional Fields for Location
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class AdditionalFields
     {
@@ -18,7 +19,9 @@ namespace FunFair.Trulioo.Client.Model.LocationFields
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string Address1 { get; set; }
     }
 }
+

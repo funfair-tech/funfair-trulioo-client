@@ -8,6 +8,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     ///     Business Record containing information on Business Search Results
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class BusinessRecord
     {
@@ -25,6 +26,7 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string TransactionRecordID { get; set; }
@@ -34,12 +36,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string RecordStatus { get; set; }
 
         /// <summary>
         ///     Results for each datasource that was queried
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Global", Justification = "TODO: Review")]
@@ -51,8 +55,10 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Global", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "AutoPropertyCanBeMadeGetOnly.Global", Justification = "TODO: Review")]
         public List<ServiceError> Errors { get; set; }
     }
 }
+

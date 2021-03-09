@@ -12,6 +12,7 @@ namespace FunFair.Trulioo.Client
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         IConfiguration Configuration { get; }
 
@@ -20,7 +21,9 @@ namespace FunFair.Trulioo.Client
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         IVerification Verification { get; }
     }
 }
+

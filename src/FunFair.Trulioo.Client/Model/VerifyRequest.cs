@@ -6,6 +6,7 @@ namespace FunFair.Trulioo.Client.Model
     ///     Verification request.
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class VerifyRequest
     {
@@ -13,6 +14,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     Indicate that Trulioo terms and conditions are accepted
         ///     The Verification request will be executed only if the value of this header is passed as 'true'.
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -25,6 +27,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public bool Demo { get; set; }
 
@@ -32,6 +35,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     set to true if you want to receive address cleanse information,
         ///     This will only change the response if you have address cleansing enabled for the country you are querying for.
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -43,6 +47,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ConfigurationName { get; set; }
 
@@ -50,6 +55,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     The consent for the data sources which will be interrogated as a part of the request.
         ///     Included only for the data sources which explicitly require consent
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -62,12 +68,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountryCode { get; set; }
 
         /// <summary>
         ///     The data field name-value pairs for the data elements on which the verification is to be performed
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -78,7 +86,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public bool VerboseMode { get; set; }
     }
 }
+

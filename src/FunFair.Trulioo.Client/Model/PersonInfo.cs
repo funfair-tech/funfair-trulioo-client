@@ -7,6 +7,7 @@ namespace FunFair.Trulioo.Client.Model
     ///     Details about a person.
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class PersonInfo
     {
@@ -14,6 +15,7 @@ namespace FunFair.Trulioo.Client.Model
         ///     First name of the individual to be verified
         ///     Dual purpose First Name or Initial
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -25,6 +27,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string MiddleName { get; set; }
 
@@ -33,12 +36,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string FirstSurName { get; set; }
 
         /// <summary>
         ///     second family name of the individual to be verified
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -50,6 +55,7 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ISOLatin1Name { get; set; }
@@ -57,6 +63,7 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         ///     Day of birth date (i.e. 23 for a date of birth of 23/11/1975)
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -67,12 +74,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? MonthOfBirth { get; set; }
 
         /// <summary>
         ///     Year of birth date (i.e. 1975 for a date of birth of 23/11/1975)
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -84,12 +93,14 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public int? MinimumAge { get; set; }
 
         /// <summary>
         ///     Single character M / F (M = Male, F = Female)
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -100,7 +111,9 @@ namespace FunFair.Trulioo.Client.Model
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public AdditionalFields AdditionalFields { get; set; } = new();
     }
 }
+

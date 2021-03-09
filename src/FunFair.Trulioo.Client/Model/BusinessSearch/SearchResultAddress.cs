@@ -6,12 +6,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
     ///     Name value pairs of address found from business search
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class SearchResultAddress
     {
         /// <summary>
         ///     Flat/Unit/Apartment number of address
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -22,12 +24,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string BuildingNumber { get; set; }
 
         /// <summary>
         ///     Name of building
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -38,12 +42,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string StreetName { get; set; }
 
         /// <summary>
         ///     Street type of address (Typically St, Rd etc)
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -54,12 +60,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string City { get; set; }
 
         /// <summary>
         ///     Suburb / Subdivision / Municipality
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -70,12 +78,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string StateProvinceCode { get; set; }
 
         /// <summary>
         ///     ZIP Code or Postal Code
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -86,12 +96,14 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string AddressType { get; set; }
 
         /// <summary>
         ///     Address1
         /// </summary>
+
 
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
@@ -102,7 +114,9 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
 
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string StateProvince { get; set; }
     }
 }
+

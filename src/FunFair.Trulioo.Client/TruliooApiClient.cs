@@ -7,6 +7,7 @@ namespace FunFair.Trulioo.Client
     ///     Provides access to the Trulioo API V1 offered.
     /// </summary>
 
+
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class TruliooApiClient : ITruliooApiClient, IContextAware
     {
@@ -45,6 +46,7 @@ namespace FunFair.Trulioo.Client
         ///     A string that represents this object.
         /// </returns>
 
+
         [SuppressMessage(category: "ToStringWithoutOverrideAnalyzer",
                          checkId: "ExplicitToStringWithoutOverrideAnalyzer: Calling ToString() on object of type 'T' but it does not override ToString()",
                          Justification = "Required in this case")]
@@ -54,3 +56,4 @@ namespace FunFair.Trulioo.Client
         }
     }
 }
+

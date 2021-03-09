@@ -14,6 +14,7 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public AuthenticationFailureException()
             : base(message: "", code: -1, reason: "")
@@ -21,6 +22,7 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
 
         /// <inheritdoc />
+
 
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public AuthenticationFailureException(string message)
@@ -30,6 +32,7 @@ namespace FunFair.Trulioo.Client.Exceptions
 
         /// <inheritdoc />
 
+
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public AuthenticationFailureException(string message, Exception innerException)
             : base(message: message, code: -1, reason: innerException.Message)
@@ -37,3 +40,4 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
     }
 }
+
