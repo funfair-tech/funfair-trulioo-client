@@ -10,8 +10,6 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for working with Trulioo Configuration.
     /// </summary>
-
-
     [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class Configuration : IConfiguration
@@ -79,8 +77,6 @@ namespace FunFair.Trulioo.Client
         ///     Gets the provinces states or other subdivisions for a country, mostly matches ISO 3166-2
         /// </summary>
         /// <param name="countryCode"></param>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<IEnumerable<CountrySubdivision>> GetCountrySubdivisionsAsync(string countryCode)
         {
@@ -96,8 +92,6 @@ namespace FunFair.Trulioo.Client
         /// <param name="countryCode"></param>
         /// <param name="configurationName"></param>
         /// <returns>List of Datafields object</returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<IEnumerable<DataFields>> GetTestEntitiesAsync(string countryCode, string configurationName)
         {
@@ -113,8 +107,6 @@ namespace FunFair.Trulioo.Client
         /// <param name="countryCode"></param>
         /// <param name="configurationName"></param>
         /// <returns> List of Data source Group Countries </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<IEnumerable<NormalizedDatasourceGroupCountry>> GetDatasourcesAsync(string countryCode, string configurationName)
         {
@@ -130,8 +122,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="countryCode"></param>
         /// <returns> Dictionary with Keys as the Country Codes and Values as list of document types for that country </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<Dictionary<string, IList<string>>> GetDocumentTypesAsync(string countryCode = null)
         {
@@ -155,4 +145,5 @@ namespace FunFair.Trulioo.Client
         Task<IEnumerable<string>> GetCountryCodesAsync(string configurationName);
     }
 }
+
 

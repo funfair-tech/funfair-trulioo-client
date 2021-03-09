@@ -17,8 +17,6 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for sending HTTP requests and receiving HTTP responses from a Trulioo server.
     /// </summary>
-
-
     [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
     public class Context
     {
@@ -73,9 +71,6 @@ namespace FunFair.Trulioo.Client
         /// <value>
         ///     A Trulioo host name.
         /// </value>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "AutoPropertyCanBeMadeGetOnly.Global", Justification = "TODO: Review")]
         public string Host { get; set; } = "api.globaldatacompany.com";
 
@@ -125,8 +120,6 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the POST request.
         /// </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         internal Task PostAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -171,8 +164,6 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         internal async Task<TReturn> PutAsync<TReturn>(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -197,8 +188,6 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the PUT request.
         /// </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         internal Task PutAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -220,8 +209,6 @@ namespace FunFair.Trulioo.Client
         /// <returns>
         ///     The response to the DELETE request.
         /// </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         internal Task DeleteAsync(Namespace ns, ResourceName resource, dynamic content = null)
         {
@@ -363,4 +350,5 @@ namespace FunFair.Trulioo.Client
         }
     }
 }
+
 
