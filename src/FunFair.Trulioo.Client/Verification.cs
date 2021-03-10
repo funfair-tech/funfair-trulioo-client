@@ -10,8 +10,6 @@ namespace FunFair.Trulioo.Client
     /// <summary>
     ///     Provides a class for working with Trulioo Verification.
     /// </summary>
-
-
     [SuppressMessage(category: "ReSharper", checkId: "ClassCanBeSealed.Global", Justification = "TODO: Review")]
     public class Verification : IVerification
     {
@@ -53,8 +51,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionRecordResult> GetTransactionRecordAsync(string id)
         {
@@ -69,8 +65,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Transaction Record to be retreived </param>
         /// <returns> Verbose Transaction Record Result of the TransactionRecordID </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionRecordResult> GetTransactionRecordVerboseAsync(string id)
         {
@@ -85,8 +79,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionRecordResult> GetTransactionRecordAddressAsync(string id)
         {
@@ -101,8 +93,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id">TransactionID of the Transaction Status to be retreived </param>
         /// <returns> Transaction Status of the transactionID </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<TransactionStatus> GetTransactionStatusAsync(string id)
         {
@@ -119,4 +109,5 @@ namespace FunFair.Trulioo.Client
         Task<VerifyResult> VerifyAsync(VerifyRequest request);
     }
 }
+
 

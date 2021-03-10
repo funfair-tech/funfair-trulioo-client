@@ -34,8 +34,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="request"> Request object containing parameters to search for </param>
         /// <returns> Contains the List of possible businesses from search </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<BusinessSearchResponse> BusinessSearchAsync(BusinessSearchRequest request)
         {
@@ -50,8 +48,6 @@ namespace FunFair.Trulioo.Client
         /// </summary>
         /// <param name="id"> TransactionRecordID of Business Search to retreive </param>
         /// <returns> Contains the Business Search transaction result </returns>
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public async Task<BusinessSearchResponse> BusinessSearchResultAsync(string id)
         {
@@ -75,4 +71,5 @@ namespace FunFair.Trulioo.Client
         #endregion
     }
 }
+
 

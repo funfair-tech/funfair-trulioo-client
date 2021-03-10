@@ -22,9 +22,6 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         ///     Transaction Id.
         /// </summary>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "InconsistentNaming", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         [SuppressMessage(category: "ReSharper", checkId: "UnusedAutoPropertyAccessor.Global", Justification = "TODO: Review")]
@@ -34,18 +31,12 @@ namespace FunFair.Trulioo.Client.Model
         /// <summary>
         ///     Time in UTC
         /// </summary>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public DateTime UploadedDt { get; set; }
 
         /// <summary>
         ///     Record.
         /// </summary>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public Record Record { get; set; }
 
@@ -61,29 +52,21 @@ namespace FunFair.Trulioo.Client.Model
         ///         <li>2000 : Unrecognized Error</li>
         ///     </ul>
         /// </summary>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public IEnumerable<ServiceError> Errors { get; set; }
 
         /// <summary>
         ///     Country code
         /// </summary>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string CountryCode { get; set; }
 
         /// <summary>
         ///     Product Name.
         /// </summary>
-
-
-
         [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
         public string ProductName { get; set; }
     }
 }
+
 
