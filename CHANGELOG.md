@@ -25,6 +25,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated FunFair.Test.Common to 5.1.2.864
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.20.0.28934
 - FF-1429 - Updated FunFair.Test.Common to 5.2.0.886
+- FF-1429 - Updated Newtonsoft.Json to 13.0.1
 ### Removed
 ### Deployment Changes
 
