@@ -28,6 +28,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated Newtonsoft.Json to 13.0.1
 - FF-1429 - Updated Microsoft.NET.Test.Sdk to 16.9.4
 - FF-1429 - Updated FunFair.Test.Common to 5.3.0.920
+- FF-1429 - Updated SonarAnalyzer.CSharp to 8.21.0.30542
 ### Removed
 ### Deployment Changes
 
