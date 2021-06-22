@@ -267,9 +267,6 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
-# JetBrains Rider
-*.sln.iml
-
 # CodeRush
 .cr/
 
@@ -309,4 +306,4 @@ src/Content
 src/Data
 
 /.gtm/
-/src/FunFair.FunWallet/tempkey.rsa
+.config
