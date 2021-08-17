@@ -20,5 +20,3 @@ namespace FunFair.Trulioo.Client
         IVerification Verification { get; }
     }
 }
-
-

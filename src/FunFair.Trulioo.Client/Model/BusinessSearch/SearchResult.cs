@@ -89,5 +89,3 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         public SearchResultAddress Address { get; set; }
     }
 }
-
-

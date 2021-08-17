@@ -27,5 +27,3 @@ namespace FunFair.Trulioo.Client.Model
         public string FieldGroup { get; set; }
     }
 }
-
-

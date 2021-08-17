@@ -145,5 +145,3 @@ namespace FunFair.Trulioo.Client
         Task<IEnumerable<string>> GetCountryCodesAsync(string configurationName);
     }
 }
-
-

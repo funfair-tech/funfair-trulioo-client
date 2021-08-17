@@ -15,7 +15,6 @@ namespace FunFair.Trulioo.Client.Model.Errors
         ///     Code of the current <see cref="Error" />.
         /// </value>
 
-        // ReSharper disable once PropertyCanBeMadeInitOnly.Global
         public int Code { get; set; }
 
         /// <summary>
@@ -25,7 +24,6 @@ namespace FunFair.Trulioo.Client.Model.Errors
         ///     Reason of the current <see cref="Error" />.
         /// </value>
 
-        // ReSharper disable once PropertyCanBeMadeInitOnly.Global
         public string Reason { get; set; }
 
         /// <summary>
@@ -35,7 +33,6 @@ namespace FunFair.Trulioo.Client.Model.Errors
         ///     Message of the current <see cref="Error" />.
         /// </value>
 
-        // ReSharper disable once PropertyCanBeMadeInitOnly.Global
         public string Message { get; set; }
 
         /// <summary>
@@ -50,5 +47,3 @@ namespace FunFair.Trulioo.Client.Model.Errors
         }
     }
 }
-
-

@@ -6,8 +6,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Metadata on transaction status
     /// </summary>
-
-    // ReSharper disable once UnusedType.Global
+    [SuppressMessage(category: "ReSharper", checkId: "UnusedType.Global", Justification = "TODO: Review")]
     public class TransactionStatus
     {
         /// <summary>
@@ -42,5 +41,3 @@ namespace FunFair.Trulioo.Client.Model
         public bool IsTimedOut { get; set; }
     }
 }
-
-

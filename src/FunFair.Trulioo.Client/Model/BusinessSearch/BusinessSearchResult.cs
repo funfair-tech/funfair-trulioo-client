@@ -37,5 +37,3 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         public List<ServiceError> Errors { get; }
     }
 }
-
-

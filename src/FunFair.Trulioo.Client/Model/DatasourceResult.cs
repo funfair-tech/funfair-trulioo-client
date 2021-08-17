@@ -47,5 +47,3 @@ namespace FunFair.Trulioo.Client.Model
         public IEnumerable<string> FieldGroups { get; set; }
     }
 }
-
-

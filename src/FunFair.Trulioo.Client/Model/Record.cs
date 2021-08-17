@@ -51,5 +51,3 @@ namespace FunFair.Trulioo.Client.Model
         public RecordRule Rule { get; set; }
     }
 }
-
-

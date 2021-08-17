@@ -52,5 +52,3 @@ namespace FunFair.Trulioo.Client
         }
     }
 }
-
-

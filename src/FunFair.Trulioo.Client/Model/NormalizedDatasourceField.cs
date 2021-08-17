@@ -21,5 +21,3 @@ namespace FunFair.Trulioo.Client.Model
         public string Type { get; set; }
     }
 }
-
-

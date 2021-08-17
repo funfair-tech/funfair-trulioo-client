@@ -81,5 +81,3 @@ namespace FunFair.Trulioo.Client.Model
         public AdditionalFields AdditionalFields { get; set; } = new();
     }
 }
-
-

@@ -18,5 +18,3 @@ namespace FunFair.Trulioo.Client.Model.PersonalInfoFields
         public string FullName { get; set; }
     }
 }
-
-

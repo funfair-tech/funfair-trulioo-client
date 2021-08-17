@@ -183,7 +183,7 @@ namespace FunFair.Trulioo.Client.URI
                 return diff;
             }
 
-            var pair = this.Items.Zip(second: other.Items, resultSelector: (p1, p2) => new {ThisPart = p1, OtherPart = p2})
+            var pair = this.Items.Zip(second: other.Items, resultSelector: (p1, p2) => new { ThisPart = p1, OtherPart = p2 })
                            .FirstOrDefault(predicate: p => p.ThisPart != p.OtherPart);
 
             if (pair == null)
@@ -208,7 +208,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public bool Equals(ResourceName other)
         {
-            if ((object) other == null)
+            if ((object)other == null)
             {
                 return false;
             }
@@ -268,7 +268,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator >(ResourceName a, ResourceName b)
         {
-            if ((object) a == null)
+            if ((object)a == null)
             {
                 return false;
             }
@@ -290,9 +290,9 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator >=(ResourceName a, ResourceName b)
         {
-            if ((object) a == null)
+            if ((object)a == null)
             {
-                return (object) b == null;
+                return (object)b == null;
             }
 
             return a.CompareTo(b) < 0;
@@ -319,7 +319,7 @@ namespace FunFair.Trulioo.Client.URI
                 return true;
             }
 
-            if ((object) a == null || (object) b == null)
+            if ((object)a == null || (object)b == null)
             {
                 return false;
             }
@@ -360,9 +360,9 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator <(ResourceName a, ResourceName b)
         {
-            if ((object) a == null)
+            if ((object)a == null)
             {
-                return (object) b != null;
+                return (object)b != null;
             }
 
             return a.CompareTo(b) < 0;
@@ -382,7 +382,7 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public static bool operator <=(ResourceName a, ResourceName b)
         {
-            if ((object) a == null)
+            if ((object)a == null)
             {
                 return true;
             }
@@ -422,5 +422,3 @@ namespace FunFair.Trulioo.Client.URI
         }
     }
 }
-
-

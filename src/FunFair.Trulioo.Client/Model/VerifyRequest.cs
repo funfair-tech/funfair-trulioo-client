@@ -65,5 +65,3 @@ namespace FunFair.Trulioo.Client.Model
         public bool VerboseMode { get; set; }
     }
 }
-
-

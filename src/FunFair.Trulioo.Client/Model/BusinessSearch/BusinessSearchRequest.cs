@@ -42,5 +42,3 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         public BusinessSearchModel Business { get; set; }
     }
 }
-
-

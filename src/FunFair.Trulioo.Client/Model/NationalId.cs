@@ -71,5 +71,3 @@ namespace FunFair.Trulioo.Client.Model
         public string CountyOfIssue { get; set; }
     }
 }
-
-

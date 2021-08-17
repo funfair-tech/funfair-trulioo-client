@@ -19,5 +19,3 @@ namespace FunFair.Trulioo.Client.Model.LocationFields
         public string Address1 { get; set; }
     }
 }
-
-

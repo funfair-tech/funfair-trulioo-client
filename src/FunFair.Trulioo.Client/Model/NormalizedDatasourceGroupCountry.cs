@@ -64,5 +64,3 @@ namespace FunFair.Trulioo.Client.Model
         public string Coverage { get; set; }
     }
 }
-
-

@@ -81,5 +81,3 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         public string StateProvince { get; set; }
     }
 }
-
-
