@@ -15,7 +15,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         ///     Code of the current <see cref="Error" />.
         /// </value>
 
-        public int Code { get; set; }
+        public int Code { get; init; }
 
         /// <summary>
         ///     Gets the reason of the current <see cref="Error" />.
@@ -24,7 +24,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         ///     Reason of the current <see cref="Error" />.
         /// </value>
 
-        public string Reason { get; set; }
+        public string Reason { get; init; }
 
         /// <summary>
         ///     Gets the message of the current <see cref="Error" />.
@@ -33,7 +33,7 @@ namespace FunFair.Trulioo.Client.Model.Errors
         ///     Message of the current <see cref="Error" />.
         /// </value>
 
-        public string Message { get; set; }
+        public string Message { get; init; }
 
         /// <summary>
         ///     Gets a string representation for the current <see cref="Error" />.
