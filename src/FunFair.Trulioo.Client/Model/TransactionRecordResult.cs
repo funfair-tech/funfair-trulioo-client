@@ -25,5 +25,3 @@ namespace FunFair.Trulioo.Client.Model
         public List<DataField> InputFields { get; set; }
     }
 }
-
-

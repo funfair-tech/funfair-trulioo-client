@@ -45,5 +45,3 @@ namespace FunFair.Trulioo.Client.Model
         public bool? ValidateDocumentImageQuality { get; set; }
     }
 }
-
-

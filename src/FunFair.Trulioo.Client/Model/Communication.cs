@@ -27,5 +27,3 @@ namespace FunFair.Trulioo.Client.Model
         public string EmailAddress { get; set; }
     }
 }
-
-

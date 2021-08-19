@@ -109,5 +109,3 @@ namespace FunFair.Trulioo.Client
         Task<VerifyResult> VerifyAsync(VerifyRequest request);
     }
 }
-
-

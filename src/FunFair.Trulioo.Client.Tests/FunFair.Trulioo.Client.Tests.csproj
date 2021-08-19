@@ -8,7 +8,7 @@
         <LangVersion>latest</LangVersion>
         <Features>strict;flow-analysis</Features>
         <TreatSpecificWarningsAsErrors />
-        <NoWarn></NoWarn>
+        <NoWarn/>
         <Nullable>enable</Nullable>
         <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
         <IsPackable>false</IsPackable>
@@ -22,6 +22,9 @@
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <CodeAnalysisRuleSet>$(SolutionDir)\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\FunFair.Trulioo.Client\FunFair.Trulioo.Client.csproj" />
+    </ItemGroup>
     <ItemGroup>
         <PackageReference Include="FunFair.Test.Common" Version="5.5.0.1195" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
@@ -42,8 +45,5 @@
         <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
         <PackageReference Include="ToStringWithoutOverrideAnalyzer" Version="0.6.0" PrivateAssets="All" />
         <PackageReference Include="xunit.analyzers" Version="0.10.0" PrivateAssets="All" />
-    </ItemGroup>
-    <ItemGroup>
-        <ProjectReference Include="..\FunFair.Trulioo.Client\FunFair.Trulioo.Client.csproj" />
     </ItemGroup>
 </Project>

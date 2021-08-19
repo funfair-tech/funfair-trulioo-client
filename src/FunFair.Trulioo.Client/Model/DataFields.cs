@@ -58,5 +58,3 @@ namespace FunFair.Trulioo.Client.Model
         public Document Document { get; set; }
     }
 }
-
-

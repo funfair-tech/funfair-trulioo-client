@@ -21,5 +21,3 @@ namespace FunFair.Trulioo.Client.Model.Errors
         public string Message { get; set; }
     }
 }
-
-

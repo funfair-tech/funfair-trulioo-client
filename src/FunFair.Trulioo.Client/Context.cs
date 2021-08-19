@@ -21,7 +21,7 @@ namespace FunFair.Trulioo.Client
     public class Context
     {
         private static readonly JsonSerializerSettings JsonSerializerSettings =
-            new() {DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat};
+            new() { DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat };
 
         private readonly string _credentials;
         private readonly IHttpClientFactory _httpClientFactory;
@@ -262,7 +262,7 @@ namespace FunFair.Trulioo.Client
             Uri serviceUri = this.CreateServiceUri(ns: ns, name: resource);
             dynamic stringContent = GetStringContent(content);
 
-            using (HttpRequestMessage request = new(method: httpMethod, requestUri: serviceUri) {Content = stringContent})
+            using (HttpRequestMessage request = new(method: httpMethod, requestUri: serviceUri) { Content = stringContent })
             {
                 request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
@@ -332,11 +332,11 @@ namespace FunFair.Trulioo.Client
             try
             {
                 error = JsonConvert.DeserializeObject<Error>(content) ??
-                        new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content};
+                        new Error { Code = (int)statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content };
             }
             catch (Exception ex)
             {
-                error = new Error {Code = (int) statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content, Reason = ex.Message};
+                error = new Error { Code = (int)statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content, Reason = ex.Message };
             }
 
             return error;
@@ -350,5 +350,3 @@ namespace FunFair.Trulioo.Client
         }
     }
 }
-
-

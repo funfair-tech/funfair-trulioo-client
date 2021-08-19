@@ -5,8 +5,7 @@ namespace FunFair.Trulioo.Client.Model
     /// <summary>
     ///     Business class to hold name value pair to be passed for verification
     /// </summary>
-
-    // ReSharper disable once UnusedType.Global
+    [SuppressMessage(category: "ReSharper", checkId: "UnusedType.Global", Justification = "TODO: Review")]
     public class Business
     {
         /// <summary>
@@ -76,5 +75,3 @@ namespace FunFair.Trulioo.Client.Model
         public bool? Entities { get; set; }
     }
 }
-
-

@@ -6,7 +6,7 @@ using FunFair.Trulioo.Client.URI;
 
 namespace FunFair.Trulioo.Client
 {
-    // ReSharper disable once UnusedType.Global
+    [SuppressMessage(category: "ReSharper", checkId: "UnusedType.Global", Justification = "TODO: Review")]
     public class BusinessSearch
     {
         #region Constructors
@@ -71,5 +71,3 @@ namespace FunFair.Trulioo.Client
         #endregion
     }
 }
-
-

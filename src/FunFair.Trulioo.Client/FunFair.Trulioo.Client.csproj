@@ -31,8 +31,8 @@
     </PropertyGroup>
     <Import Project="$(SolutionDir)FunFair.props" />
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
         <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="AsyncFixer" Version="1.5.1" PrivateAssets="All" />
@@ -42,11 +42,5 @@
         <PackageReference Include="SonarAnalyzer.CSharp" Version="8.27.0.35380" PrivateAssets="All" />
         <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
         <PackageReference Include="ToStringWithoutOverrideAnalyzer" Version="0.6.0" PrivateAssets="All" />
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="Model\BusinessSearch\" />
-        <Folder Include="Model\Errors\" />
-        <Folder Include="Model\PersonalInfoFields\" />
-        <Folder Include="URI\" />
     </ItemGroup>
 </Project>

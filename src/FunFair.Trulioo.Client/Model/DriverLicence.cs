@@ -39,5 +39,3 @@ namespace FunFair.Trulioo.Client.Model
         public int? YearOfExpiry { get; set; }
     }
 }
-
-

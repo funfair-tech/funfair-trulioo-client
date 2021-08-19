@@ -68,5 +68,3 @@ namespace FunFair.Trulioo.Client.Model
         public string ProductName { get; set; }
     }
 }
-
-

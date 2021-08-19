@@ -34,5 +34,3 @@ namespace FunFair.Trulioo.Client.Exceptions
         }
     }
 }
-
-

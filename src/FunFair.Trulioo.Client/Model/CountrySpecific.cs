@@ -12,5 +12,3 @@ namespace FunFair.Trulioo.Client.Model
     {
     }
 }
-
-
