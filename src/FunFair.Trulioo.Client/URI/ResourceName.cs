@@ -35,12 +35,9 @@ namespace FunFair.Trulioo.Client.URI
         public ResourceName(params string[] parts)
             : base(parts)
         {
-            foreach (string part in this)
+            if(this.Any(part => string.IsNullOrEmpty(part)))
             {
-                if (string.IsNullOrEmpty(part))
-                {
-                    throw new ArgumentException(string.Concat(str0: "parts: ", this.ToString()), nameof(parts));
-                }
+                throw new ArgumentException(string.Concat(str0: "parts: ", this.ToString()), nameof(parts));
             }
         }
 
