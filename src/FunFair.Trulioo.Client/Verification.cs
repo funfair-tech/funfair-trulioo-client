@@ -102,10 +102,4 @@ namespace FunFair.Trulioo.Client
             return response;
         }
     }
-
-    public interface IVerification
-    {
-        [SuppressMessage(category: "ReSharper", checkId: "UnusedMember.Global", Justification = "TODO: Review")]
-        Task<VerifyResult> VerifyAsync(VerifyRequest request);
-    }
 }
