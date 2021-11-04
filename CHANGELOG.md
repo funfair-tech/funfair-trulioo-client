@@ -59,6 +59,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.30.0.37606
 - FF-1429 - Updated Microsoft.NET.Test.Sdk to 17.0.0
 - FF-1429 - Updated FunFair.CodeAnalysis to 5.6.0.960
+- FF-1429 - Updated FunFair.Test.Common to 5.6.1.1333
 ### Removed
 ### Deployment Changes
 
