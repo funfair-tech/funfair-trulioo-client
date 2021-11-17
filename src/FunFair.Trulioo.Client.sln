@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{B6DAE4
 ProjectSection(SolutionItems) = preProject
 	CodeAnalysis.ruleset = CodeAnalysis.ruleset
 	global.json = global.json
+	..\CHANGELOG.md = ..\CHANGELOG.md
+	..\README.md = ..\README.md
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunFair.Trulioo.Client.Tests", "FunFair.Trulioo.Client.Tests\FunFair.Trulioo.Client.Tests.csproj", "{1B0FF04F-4A4E-4321-A4A2-C02E5425217E}"
