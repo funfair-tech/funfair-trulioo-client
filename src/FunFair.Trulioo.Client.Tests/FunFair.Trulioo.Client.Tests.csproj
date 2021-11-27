@@ -3,19 +3,19 @@
         <OutputType>Library</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
-      <WarningsAsErrors/>
-      <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-      <LangVersion>latest</LangVersion>
-      <Features>strict;flow-analysis</Features>
-      <TreatSpecificWarningsAsErrors/>
-      <NoWarn/>
-      <Nullable>enable</Nullable>
-      <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
-      <IsPackable>false</IsPackable>
-      <IsPublishable>false</IsPublishable>
-      <GenerateNeutralResourcesLanguageAttribute>true</GenerateNeutralResourcesLanguageAttribute>
-      <TieredCompilation>true</TieredCompilation>
-      <ImplicitUsings>disable</ImplicitUsings>
+        <WarningsAsErrors />
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+        <LangVersion>latest</LangVersion>
+        <Features>strict;flow-analysis</Features>
+        <TreatSpecificWarningsAsErrors />
+        <NoWarn />
+        <Nullable>enable</Nullable>
+        <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
+        <IsPackable>false</IsPackable>
+        <IsPublishable>false</IsPublishable>
+        <GenerateNeutralResourcesLanguageAttribute>true</GenerateNeutralResourcesLanguageAttribute>
+        <TieredCompilation>true</TieredCompilation>
+        <ImplicitUsings>disable</ImplicitUsings>
     </PropertyGroup>
     <PropertyGroup>
         <AnalysisLevel>latest</AnalysisLevel>

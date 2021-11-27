@@ -4,20 +4,20 @@
         <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
         <LangVersion>latest</LangVersion>
         <Features>strict;flow-analysis</Features>
-      <TargetFramework>net5.0</TargetFramework>
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-      <TreatSpecificWarningsAsErrors/>
-      <WarningsAsErrors/>
-      <NoWarn>1591</NoWarn>
-      <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
-      <Nullable>disable</Nullable>
-      <IsPackable>true</IsPackable>
-      <IsPublishable>false</IsPublishable>
-      <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
-      <GenerateNeutralResourcesLanguageAttribute>true</GenerateNeutralResourcesLanguageAttribute>
-      <TieredCompilation>true</TieredCompilation>
-      <ImplicitUsings>disable</ImplicitUsings>
-      <EnablePackageValidation>true</EnablePackageValidation>
+        <TargetFramework>net5.0</TargetFramework>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <TreatSpecificWarningsAsErrors />
+        <WarningsAsErrors />
+        <NoWarn>1591</NoWarn>
+        <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
+        <Nullable>disable</Nullable>
+        <IsPackable>true</IsPackable>
+        <IsPublishable>false</IsPublishable>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
+        <GenerateNeutralResourcesLanguageAttribute>true</GenerateNeutralResourcesLanguageAttribute>
+        <TieredCompilation>true</TieredCompilation>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <EnablePackageValidation>true</EnablePackageValidation>
     </PropertyGroup>
     <PropertyGroup>
         <AnalysisLevel>latest</AnalysisLevel>
