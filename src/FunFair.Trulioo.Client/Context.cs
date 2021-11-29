@@ -2,7 +2,6 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -79,7 +78,7 @@ namespace FunFair.Trulioo.Client
             get
             {
                 HttpClient httpClient = this._httpClientFactory.CreateClient(this._httpClientName);
-                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType: "application/json"));
+                httpClient.DefaultRequestHeaders.Accept.Add(new(mediaType: "application/json"));
                 httpClient.DefaultRequestHeaders.Add(name: "User-Agent", value: "trulioo-sdk-csharp/1.1");
 
                 return httpClient;
@@ -317,7 +316,7 @@ namespace FunFair.Trulioo.Client
 
                     break;
                 default:
-                    requestException = new RequestException(message: error.Message, code: error.Code, reason: error.Reason);
+                    requestException = new(message: error.Message, code: error.Code, reason: error.Reason);
 
                     break;
             }
@@ -341,7 +340,7 @@ namespace FunFair.Trulioo.Client
             }
             catch (Exception ex)
             {
-                error = new Error
+                error = new()
                         {
                             Code = (int)statusCode,
                             Message = string.IsNullOrEmpty(content)

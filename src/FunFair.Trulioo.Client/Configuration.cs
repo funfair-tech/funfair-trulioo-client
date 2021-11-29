@@ -126,7 +126,7 @@ namespace FunFair.Trulioo.Client
         public async Task<Dictionary<string, IList<string>>> GetDocumentTypesAsync(string countryCode = null)
         {
             ResourceName resource = countryCode != null
-                ? new ResourceName("documentTypes", countryCode)
+                ? new("documentTypes", countryCode)
                 : new ResourceName("documentTypes");
 
             Dictionary<string, IList<string>> response = await this.Context.GetAsync<Dictionary<string, IList<string>>>(ns: this._configurationNamespace, resource: resource);

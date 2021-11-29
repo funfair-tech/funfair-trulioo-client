@@ -15,8 +15,8 @@ namespace FunFair.Trulioo.Client.Model.BusinessSearch
         /// </summary>
         public BusinessRecord()
         {
-            this.Errors = new List<ServiceError>();
-            this.DatasourceResults = new List<BusinessSearchResult>();
+            this.Errors = new();
+            this.DatasourceResults = new();
         }
 
         /// <summary>
