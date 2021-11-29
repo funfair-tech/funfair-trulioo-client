@@ -52,6 +52,9 @@ namespace FunFair.Trulioo.Client.Exceptions
         private string Reason { get; }
 
         /// <inheritdoc />
-        public override string Message => string.IsNullOrEmpty(base.Message) ? this.Reason : base.Message;
+        public override string Message =>
+            string.IsNullOrEmpty(base.Message)
+                ? this.Reason
+                : base.Message;
     }
 }
