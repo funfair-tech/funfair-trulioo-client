@@ -331,12 +331,24 @@ namespace FunFair.Trulioo.Client
 
             try
             {
-                error = JsonConvert.DeserializeObject<Error>(content) ??
-                        new Error { Code = (int)statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content };
+                error = JsonConvert.DeserializeObject<Error>(content) ?? new Error
+                                                                         {
+                                                                             Code = (int)statusCode,
+                                                                             Message = string.IsNullOrEmpty(content)
+                                                                                 ? statusCode.ToString()
+                                                                                 : content
+                                                                         };
             }
             catch (Exception ex)
             {
-                error = new Error { Code = (int)statusCode, Message = string.IsNullOrEmpty(content) ? statusCode.ToString() : content, Reason = ex.Message };
+                error = new Error
+                        {
+                            Code = (int)statusCode,
+                            Message = string.IsNullOrEmpty(content)
+                                ? statusCode.ToString()
+                                : content,
+                            Reason = ex.Message
+                        };
             }
 
             return error;

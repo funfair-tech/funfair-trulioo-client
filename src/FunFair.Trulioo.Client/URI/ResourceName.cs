@@ -396,7 +396,8 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public override string ToString()
         {
-            IEnumerable<string> segments = from segment in this select segment;
+            IEnumerable<string> segments = from segment in this
+                                           select segment;
 
             return string.Join(separator: "/", values: segments);
         }
@@ -413,7 +414,8 @@ namespace FunFair.Trulioo.Client.URI
         /// </returns>
         public string ToUriString()
         {
-            IEnumerable<string> segments = from segment in this select Uri.EscapeDataString(segment);
+            IEnumerable<string> segments = from segment in this
+                                           select Uri.EscapeDataString(segment);
 
             return string.Join(separator: "/", values: segments);
         }
