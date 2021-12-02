@@ -74,6 +74,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated FunFair.CodeAnalysis to 5.7.0.995
 - FF-1429 - Updated TeamCity.VSTest.TestAdapter to 1.0.28
 - FF-1429 - Updated Roslynator.Analyzers to 3.3.0
+- FF-1429 - Updated FunFair.CodeAnalysis to 5.7.2.1044
 ### Removed
 ### Deployment Changes
 
