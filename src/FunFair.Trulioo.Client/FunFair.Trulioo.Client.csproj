@@ -13,7 +13,7 @@
         <NoWarn>1591</NoWarn>
         <Nullable>disable</Nullable>
         <OutputType>library</OutputType>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <TieredCompilation>true</TieredCompilation>
         <TreatSpecificWarningsAsErrors />
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -42,6 +42,7 @@
         <PackageReference Include="AsyncFixer" Version="1.5.1" PrivateAssets="All" />
         <PackageReference Include="FunFair.CodeAnalysis" Version="5.7.3.1052" PrivateAssets="All" />
         <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.0.64" PrivateAssets="All" />
+        <PackageReference Include="Philips.CodeAnalysis.DuplicateCodeAnalyzer" Version="1.1.4" PrivateAssets="All" />
         <PackageReference Include="Roslynator.Analyzers" Version="3.3.0" PrivateAssets="All" />
         <PackageReference Include="SonarAnalyzer.CSharp" Version="8.33.0.40503" PrivateAssets="All" />
         <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
