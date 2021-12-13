@@ -9,6 +9,14 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+### Removed
+### Deployment Changes
+
+<!--
+Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
+-->
+## [6.0.0] - 2021-12-13
+### Changed
 - FF-1429 - Updated AsyncFixer to 1.4.0
 - FF-1429 - Updated AsyncFixer to 1.4.1
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.17.0.26580
@@ -80,12 +88,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.33.0.40503
 - FF-3856 - Updated to dotnet 6.0
 - FF-1429 - Updated TeamCity.VSTest.TestAdapter to 1.0.30
-### Removed
-### Deployment Changes
 
-<!--
-Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
--->
 ## [5.1.0] - 2021-01-18
 ### Changed
 - FF-1429 - Updated SonarAnalyzer.CSharp to 8.16.0.25740
