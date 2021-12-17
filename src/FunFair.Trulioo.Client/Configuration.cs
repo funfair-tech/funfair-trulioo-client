@@ -111,7 +111,8 @@ public class Configuration : IConfiguration
     public async Task<IEnumerable<NormalizedDatasourceGroupCountry>> GetDatasourcesAsync(string countryCode, string configurationName)
     {
         ResourceName resource = new("datasources", configurationName, countryCode);
-        IList<NormalizedDatasourceGroupCountry> response = await this.Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(ns: this._configurationNamespace, resource: resource);
+        IList<NormalizedDatasourceGroupCountry> response =
+            await this.Context.GetAsync<IList<NormalizedDatasourceGroupCountry>>(ns: this._configurationNamespace, resource: resource);
 
         return response;
     }
