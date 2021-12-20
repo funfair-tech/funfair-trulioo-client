@@ -19,7 +19,8 @@ namespace FunFair.Trulioo.Client;
 [SuppressMessage(category: "ReSharper", checkId: "ClassNeverInstantiated.Global", Justification = "TODO: Review")]
 public class Context
 {
-    private static readonly JsonSerializerSettings JsonSerializerSettings = new() { DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat };
+    private static readonly JsonSerializerSettings JsonSerializerSettings =
+        new() { DateTimeZoneHandling = DateTimeZoneHandling.Utc, DateFormatHandling = DateFormatHandling.IsoDateFormat };
 
     private readonly string _credentials;
     private readonly IHttpClientFactory _httpClientFactory;
@@ -264,7 +265,8 @@ public class Context
         {
             request.Headers.Add(name: "Authorization", $"Basic {this._credentials}");
 
-            HttpResponseMessage response = await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
+            HttpResponseMessage response =
+                await this.HttpClient.SendAsync(request: request, completionOption: HttpCompletionOption.ResponseContentRead, cancellationToken: CancellationToken.None);
 
             if (!response.IsSuccessStatusCode)
             {
