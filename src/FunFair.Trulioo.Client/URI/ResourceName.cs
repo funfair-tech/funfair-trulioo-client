@@ -188,7 +188,7 @@ internal sealed class ResourceName : ReadOnlyCollection<string>, IComparable, IC
             return 0;
         }
 
-        return string.Compare(strA: pair.ThisPart, strB: pair.OtherPart, comparisonType: StringComparison.Ordinal);
+        return string.CompareOrdinal(strA: pair.ThisPart, strB: pair.OtherPart);
     }
 
     /// <summary>
