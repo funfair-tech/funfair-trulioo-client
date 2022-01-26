@@ -9,6 +9,14 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+### Removed
+### Deployment Changes
+
+<!--
+Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
+-->
+## [6.0.4] - 2022-01-26
+### Changed
 - FF-1429 - Updated Philips.CodeAnalysis.DuplicateCodeAnalyzer to 1.1.5
 - FF-1429 - Updated Philips.CodeAnalysis.DuplicateCodeAnalyzer to 1.1.6
 - FF-1429 - Updated FunFair.Test.Common to 5.8.0.1567
@@ -16,12 +24,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated FunFair.Test.Common to 5.8.1.1595
 - FF-1429 - Updated NSubstitute to 4.3.0
 - FF-1429 - Updated Roslynator.Analyzers to 4.0.0
-### Removed
-### Deployment Changes
 
-<!--
-Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
--->
 ## [6.0.3] - 2021-12-25
 ### Changed
 - FF-1429 - Updated TeamCity.VSTest.TestAdapter to 1.0.31
