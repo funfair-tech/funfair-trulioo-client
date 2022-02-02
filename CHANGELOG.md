@@ -9,17 +9,20 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
-- FF-1429 - Updated Roslynator.Analyzers to 4.0.2
-- FF-1429 - Updated coverlet to 3.1.1
-- FF-1429 - Updated SonarAnalyzer.CSharp to 8.35.0.42613
-- FF-1429 - Updated FunFair.Test.Common to 5.8.3.1625
-- FF-1429 - Updated TeamCity.VSTest.TestAdapter to 1.0.33
 ### Removed
 ### Deployment Changes
 
 <!--
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
+## [6.0.6] - 2022-02-02
+### Changed
+- FF-1429 - Updated Roslynator.Analyzers to 4.0.2
+- FF-1429 - Updated coverlet to 3.1.1
+- FF-1429 - Updated SonarAnalyzer.CSharp to 8.35.0.42613
+- FF-1429 - Updated FunFair.Test.Common to 5.8.3.1625
+- FF-1429 - Updated TeamCity.VSTest.TestAdapter to 1.0.33
+
 ## [6.0.5] - 2022-01-28
 ### Changed
 - FF-1429 - Updated FunFair.Test.Common to 5.8.2.1611
