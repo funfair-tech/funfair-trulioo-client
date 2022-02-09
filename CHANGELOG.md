@@ -9,6 +9,14 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+### Removed
+### Deployment Changes
+
+<!--
+Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
+-->
+## [6.0.8] - 2022-02-09
+### Changed
 - FF-1429 - Updated coverlet to 3.1.2
 - FF-1429 - Updated FunFair.Test.Common to 5.8.5.1649
 - FF-1429 - Updated FunFair.CodeAnalysis to 5.8.0.1196
@@ -16,12 +24,7 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - FF-1429 - Updated FunFair.Test.Common to 5.9.1.1665
 - FF-1429 - Updated FunFair.CodeAnalysis to 5.8.1.1203
 - FF-3881 - Updated DotNet SDK to 6.0.102
-### Removed
-### Deployment Changes
 
-<!--
-Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
--->
 ## [6.0.7] - 2022-02-05
 ### Changed
 - FF-1429 - Updated TeamCity.VSTest.TestAdapter to 1.0.34
